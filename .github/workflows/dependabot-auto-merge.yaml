@@ -1,0 +1,47 @@
+name: Dependabot Auto Merge
+on:
+  pull_request:
+    paths:
+      - "package.json"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  dependabot:
+    runs-on: ubuntu-latest
+    if: github.actor == 'dependabot[bot]'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup bun
+        uses: oven-sh/setup-bun@v1
+
+      - name: Update bun.lockb
+        run: |
+          bun install
+          git add bun.lockb
+          git config --global user.name 'dependabot[bot]'
+          git config --global user.email 'dependabot[bot]@users.noreply.github.com'
+          git commit --amend --no-edit 
+          git push --force
+
+      - name: Dependabot metadata
+        id: metadata
+        uses: dependabot/fetch-metadata@v1
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+
+      - name: Approve PR
+        run: gh pr review --approve "$PR_URL"
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - name: Enable auto-merge for Dependabot PRs
+        run: gh pr merge --auto --rebase "$PR_URL"
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
