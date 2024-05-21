@@ -26,7 +26,7 @@ jobs:
           git config --global user.name 'dependabot[bot]'
           git config --global user.email 'dependabot[bot]@users.noreply.github.com'
           git commit --amend --no-edit --no-verify 
-          git push --force
+          git push origin HEAD:$GITHUB_HEAD_REF --force
 
       - name: Dependabot metadata
         id: metadata
