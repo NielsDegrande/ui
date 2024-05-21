@@ -1,0 +1,28 @@
+{
+  "error": {
+    "oops": "Oops!",
+    "something_went_wrong": "Something went wrong"
+  },
+  "login": {
+    "login": "Log in",
+    "logo": "Logo",
+    "password": "Password",
+    "username": "Username",
+    "welcome_to": "Welcome to"
+  },
+  "not_found": {
+    "page_not_found": "Page not found"
+  },
+  "products": {
+    "error": "Something went wrong while fetching products.",
+    "remove": "Remove"
+  },
+  "shared": {
+    "app_name": "Template",
+    "home": "Home",
+    "products": "Products"
+  },
+  "sidebar": {
+    "logout": "Log out"
+  }
+}

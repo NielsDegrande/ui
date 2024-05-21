@@ -1,0 +1,4 @@
+bunx lint-staged
+bun run test:ci
+bash playwright/test.sh
+bun run knip
