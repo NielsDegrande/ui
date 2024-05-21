@@ -15,6 +15,7 @@ It incudes Bun + React + TypeScript + Vite + SWC.
 
 ```shell
 bun install
+# To start a development server.
 bun run dev
 ```
 
