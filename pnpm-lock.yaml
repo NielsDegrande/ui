@@ -13,10 +13,10 @@ dependencies:
     version: 11.11.5(@emotion/react@11.11.4)(@types/react@18.2.66)(react@18.3.1)
   '@mui/icons-material':
     specifier: 5.15.18
-    version: 5.15.18(@mui/material@5.15.17)(@types/react@18.2.66)(react@18.3.1)
+    version: 5.15.18(@mui/material@5.15.18)(@types/react@18.2.66)(react@18.3.1)
   '@mui/material':
-    specifier: 5.15.17
-    version: 5.15.17(@emotion/react@11.11.4)(@emotion/styled@11.11.5)(@types/react@18.2.66)(react-dom@18.3.1)(react@18.3.1)
+    specifier: 5.15.18
+    version: 5.15.18(@emotion/react@11.11.4)(@emotion/styled@11.11.5)(@types/react@18.2.66)(react-dom@18.3.1)(react@18.3.1)
   '@tanstack/react-query':
     specifier: 5.37.1
     version: 5.37.1(react@18.3.1)
@@ -786,7 +786,7 @@ packages:
     resolution: {integrity: sha512-/9pVk+Al8qxAjwFUADv4BRZgMpZM4m5E+2Q/20qhVPuIJWqKp4Ie4tGExac6zu93rgPTYVQGgu+1vjiT0E+cEw==}
     dev: false
 
-  /@mui/icons-material@5.15.18(@mui/material@5.15.17)(@types/react@18.2.66)(react@18.3.1):
+  /@mui/icons-material@5.15.18(@mui/material@5.15.18)(@types/react@18.2.66)(react@18.3.1):
     resolution: {integrity: sha512-jGhyw02TSLM0NgW+MDQRLLRUD/K4eN9rlK2pTBTL1OtzyZmQ8nB060zK1wA0b7cVrIiG+zyrRmNAvGWXwm2N9Q==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -798,13 +798,13 @@ packages:
         optional: true
     dependencies:
       '@babel/runtime': 7.24.6
-      '@mui/material': 5.15.17(@emotion/react@11.11.4)(@emotion/styled@11.11.5)(@types/react@18.2.66)(react-dom@18.3.1)(react@18.3.1)
+      '@mui/material': 5.15.18(@emotion/react@11.11.4)(@emotion/styled@11.11.5)(@types/react@18.2.66)(react-dom@18.3.1)(react@18.3.1)
       '@types/react': 18.2.66
       react: 18.3.1
     dev: false
 
-  /@mui/material@5.15.17(@emotion/react@11.11.4)(@emotion/styled@11.11.5)(@types/react@18.2.66)(react-dom@18.3.1)(react@18.3.1):
-    resolution: {integrity: sha512-ru/MLvTkCh0AZXmqwIpqGTOoVBS/sX48zArXq/DvktxXZx4fskiRA2PEc7Rk5ZlFiZhKh4moL4an+l8zZwq49Q==}
+  /@mui/material@5.15.18(@emotion/react@11.11.4)(@emotion/styled@11.11.5)(@types/react@18.2.66)(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-n+/dsiqux74fFfcRUJjok+ieNQ7+BEk6/OwX9cLcLvriZrZb+/7Y8+Fd2HlUUbn5N0CDurgAHm0VH1DqyJ9HAw==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@emotion/react': ^11.5.0
