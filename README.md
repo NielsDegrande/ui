@@ -3,28 +3,27 @@
 ## Introduction
 
 This repository holds the UI.
-It incudes Bun + React + TypeScript + Vite + SWC.
+It incudes PNPM + React + TypeScript + Vite + SWC.
 
 ## Getting Started
-
-### Prerequisites
-
-- [Bun](https://bun.sh/docs/installation)
 
 ### Installation
 
 ```shell
-bun install
+# Install package managers.
+corepack enable
+# Install the dependencies.
+pnpm install
 # To start a development server.
-bun run dev
+pnpm dev
 ```
 
 ## Generate API from Swagger
 
 We use `swagger-typescript-api` to generate the API.
 
-To generate the templates (first time only): `bun run templates`.
-To update the models: `bun run models`.
+To generate the templates (first time only): `pnpm templates`.
+To update the models: `pnpm models`.
 When executing the above, make sure the API is running.
 
 ## Component Libraries & Styling

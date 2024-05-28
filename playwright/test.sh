@@ -5,7 +5,7 @@
 set -eux
 
 # Start a development server.
-bun run dev &
+pnpm dev &
 
 # Clean up on exit.
 clean_up() {
@@ -17,4 +17,4 @@ trap clean_up EXIT
 sleep 3
 
 # Run playwright tests.
-CI=true bun run playwright
+CI=true pnpm playwright

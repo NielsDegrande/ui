@@ -1,4 +1,4 @@
-bunx lint-staged
-bun run test:ci
+npx --yes lint-staged
+pnpm test:ci
 bash playwright/test.sh
-bun run knip
+pnpm knip
