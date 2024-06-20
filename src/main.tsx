@@ -62,6 +62,6 @@ if (rootElement) {
         <RouterProvider router={router} />
         <ReactQueryDevtools />
       </QueryClientProvider>
-    </React.StrictMode>,
+    </React.StrictMode>
   );
 }

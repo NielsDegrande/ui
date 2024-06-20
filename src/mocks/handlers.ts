@@ -20,7 +20,17 @@ export const handlers = [
           price: 200,
         },
       ],
-      { status: 200 },
+      { status: 200 }
+    );
+  }),
+  http.get(`${API_URL}/api/auth`, () => {
+    return HttpResponse.json(
+      {
+        user_id: 0,
+        username: "user",
+        email: "",
+      },
+      { status: 200 }
     );
   }),
 ];

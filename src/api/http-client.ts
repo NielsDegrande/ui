@@ -44,7 +44,7 @@ export type RequestParams = Omit<
 export interface ApiConfig<SecurityDataType = unknown>
   extends Omit<AxiosRequestConfig, "data" | "cancelToken"> {
   securityWorker?: (
-    securityData: SecurityDataType | null,
+    securityData: SecurityDataType | null
   ) => Promise<AxiosRequestConfig | void> | AxiosRequestConfig | void;
   secure?: boolean;
   format?: ResponseType;
@@ -85,7 +85,7 @@ export class HttpClient<SecurityDataType = unknown> {
 
   protected mergeRequestParams(
     params1: AxiosRequestConfig,
-    params2?: AxiosRequestConfig,
+    params2?: AxiosRequestConfig
   ): AxiosRequestConfig {
     const method = params1.method || (params2 && params2.method);
 
@@ -123,7 +123,7 @@ export class HttpClient<SecurityDataType = unknown> {
         const isFileType = formItem instanceof Blob || formItem instanceof File;
         formData.append(
           key,
-          isFileType ? formItem : this.stringifyFormItem(formItem),
+          isFileType ? formItem : this.stringifyFormItem(formItem)
         );
       }
 

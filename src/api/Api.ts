@@ -99,7 +99,7 @@ export class Api<
       /** File Path */
       file_path: string;
     },
-    params: RequestParams = {},
+    params: RequestParams = {}
   ) =>
     this.request<string, HTTPValidationError>({
       path: `/api/file`,
@@ -120,7 +120,7 @@ export class Api<
    */
   createFeedbackApiFeedbackPost = (
     data: Feedback,
-    params: RequestParams = {},
+    params: RequestParams = {}
   ) =>
     this.request<any, HTTPValidationError>({
       path: `/api/feedback`,
@@ -159,7 +159,7 @@ export class Api<
    */
   createProductApiSampleProductPost = (
     data: Product,
-    params: RequestParams = {},
+    params: RequestParams = {}
   ) =>
     this.request<Product, HTTPValidationError>({
       path: `/api/sample/product`,
@@ -181,7 +181,7 @@ export class Api<
    */
   getProductApiSampleProductProductIdGet = (
     productId: number,
-    params: RequestParams = {},
+    params: RequestParams = {}
   ) =>
     this.request<Product, HTTPValidationError>({
       path: `/api/sample/product/${productId}`,
@@ -202,7 +202,7 @@ export class Api<
   updateProductApiSampleProductProductIdPut = (
     productId: string,
     data: Product,
-    params: RequestParams = {},
+    params: RequestParams = {}
   ) =>
     this.request<Product, HTTPValidationError>({
       path: `/api/sample/product/${productId}`,
@@ -224,7 +224,7 @@ export class Api<
    */
   deleteProductApiSampleProductProductIdDelete = (
     productId: number,
-    params: RequestParams = {},
+    params: RequestParams = {}
   ) =>
     this.request<any, HTTPValidationError>({
       path: `/api/sample/product/${productId}`,
