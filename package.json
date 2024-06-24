@@ -49,7 +49,7 @@
   },
   "devDependencies": {
     "@playwright/test": "1.44.1",
-    "@tanstack/eslint-plugin-query": "5.35.6",
+    "@tanstack/eslint-plugin-query": "5.43.1",
     "@testing-library/jest-dom": "6.4.6",
     "@testing-library/react": "15.0.7",
     "@types/node": "20.14.2",
