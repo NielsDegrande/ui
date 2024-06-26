@@ -363,8 +363,8 @@ packages:
       }
     dev: false
 
-  ? /@emotion/styled@11.11.5(@emotion/react@11.11.4)(@types/react@18.3.3)(react@18.3.1)
-  : resolution:
+  /@emotion/styled@11.11.5(@emotion/react@11.11.4)(@types/react@18.3.3)(react@18.3.1):
+    resolution:
       {
         integrity: sha512-/ZjjnaNKvuMPxcIiUkf/9SHoG4Q196DRl1w82hQ3WCsjo1IUR8uaGWrC6a87CrYAW0Kb/pK7hk8BnLgLRi9KoQ==,
       }
@@ -1014,8 +1014,8 @@ packages:
       }
     dev: false
 
-  ? /@mui/icons-material@5.15.20(@mui/material@5.15.19)(@types/react@18.3.3)(react@18.3.1)
-  : resolution:
+  /@mui/icons-material@5.15.20(@mui/material@5.15.19)(@types/react@18.3.3)(react@18.3.1):
+    resolution:
       {
         integrity: sha512-oGcKmCuHaYbAAoLN67WKSXtHmEgyWcJToT1uRtmPyxMj9N5uqwc/mRtEnst4Wj/eGr+zYH2FiZQ79v9k7kSk1Q==,
       }
@@ -1034,8 +1034,8 @@ packages:
       react: 18.3.1
     dev: false
 
-  ? /@mui/material@5.15.19(@emotion/react@11.11.4)(@emotion/styled@11.11.5)(@types/react@18.3.3)(react-dom@18.3.1)(react@18.3.1)
-  : resolution:
+  /@mui/material@5.15.19(@emotion/react@11.11.4)(@emotion/styled@11.11.5)(@types/react@18.3.3)(react-dom@18.3.1)(react@18.3.1):
+    resolution:
       {
         integrity: sha512-lp5xQBbcRuxNtjpWU0BWZgIrv2XLUz4RJ0RqFXBdESIsKoGCQZ6P3wwU5ZPuj5TjssNiKv9AlM+vHopRxZhvVQ==,
       }
@@ -1093,8 +1093,8 @@ packages:
       react: 18.3.1
     dev: false
 
-  ? /@mui/styled-engine@5.15.14(@emotion/react@11.11.4)(@emotion/styled@11.11.5)(react@18.3.1)
-  : resolution:
+  /@mui/styled-engine@5.15.14(@emotion/react@11.11.4)(@emotion/styled@11.11.5)(react@18.3.1):
+    resolution:
       {
         integrity: sha512-RILkuVD8gY6PvjZjqnWhz8fu68dVkqhM5+jYWfB5yhlSQKg+2rHkmEwm75XIeAqI3qwOndK6zELK5H6Zxn4NHw==,
       }
@@ -1118,8 +1118,8 @@ packages:
       react: 18.3.1
     dev: false
 
-  ? /@mui/system@5.15.15(@emotion/react@11.11.4)(@emotion/styled@11.11.5)(@types/react@18.3.3)(react@18.3.1)
-  : resolution:
+  /@mui/system@5.15.15(@emotion/react@11.11.4)(@emotion/styled@11.11.5)(@types/react@18.3.3)(react@18.3.1):
+    resolution:
       {
         integrity: sha512-aulox6N1dnu5PABsfxVGOZffDVmlxPOVgj56HrUnJE8MCSh8lOvvkd47cebIVQQYAjpwieXQXiDPj5pwM40jTQ==,
       }
@@ -1693,8 +1693,8 @@ packages:
       }
     dev: false
 
-  ? /@tanstack/react-query-devtools@5.37.1(@tanstack/react-query@5.37.1)(react@18.3.1)
-  : resolution:
+  /@tanstack/react-query-devtools@5.37.1(@tanstack/react-query@5.37.1)(react@18.3.1):
+    resolution:
       {
         integrity: sha512-fWL3rV/avL9HsHt3RVYxuLCqSHghBwSGPIUMDZ9hfg9PDjQaeI9d8kJj6yLoCBWUhTue5/rQbISvFtr+yxyYyA==,
       }
@@ -1771,8 +1771,8 @@ packages:
       vitest: 1.6.0(@types/node@20.14.2)(jsdom@24.1.0)
     dev: true
 
-  ? /@testing-library/react@16.0.0(@testing-library/dom@10.1.0)(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1)(react@18.3.1)
-  : resolution:
+  /@testing-library/react@16.0.0(@testing-library/dom@10.1.0)(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1)(react@18.3.1):
+    resolution:
       {
         integrity: sha512-guuxUKRWQ+FgNX0h0NS0FIq3Q3uLtWVpBzcLOggmfMoUpgBnzBzvLLd4fbm6yS8ydJd94cIfY4yP9qUQjM2KwQ==,
       }
@@ -1914,8 +1914,8 @@ packages:
       }
     dev: true
 
-  ? /@typescript-eslint/eslint-plugin@7.13.1(@typescript-eslint/parser@7.13.0)(eslint@8.57.0)(typescript@5.4.5)
-  : resolution:
+  /@typescript-eslint/eslint-plugin@7.13.1(@typescript-eslint/parser@7.13.0)(eslint@8.57.0)(typescript@5.4.5):
+    resolution:
       {
         integrity: sha512-kZqi+WZQaZfPKnsflLJQCz6Ze9FFSMfXrrIOcyargekQxG37ES7DJNpJUE9Q/X5n3yTIP/WPutVNzgknQ7biLg==,
       }
@@ -3474,8 +3474,8 @@ packages:
       - supports-color
     dev: true
 
-  ? /eslint-module-utils@2.8.1(@typescript-eslint/parser@7.13.0)(eslint-import-resolver-node@0.3.9)(eslint@8.57.0)
-  : resolution:
+  /eslint-module-utils@2.8.1(@typescript-eslint/parser@7.13.0)(eslint-import-resolver-node@0.3.9)(eslint@8.57.0):
+    resolution:
       {
         integrity: sha512-rXDXR3h7cs7dy9RNpUlQf80nX31XWJEyGq1tRMo+6GsO5VmTe4UTwtmonAD4ZkAsrfMVDA2wlGJ3790Ys+D49Q==,
       }
@@ -3604,8 +3604,8 @@ packages:
       string.prototype.matchall: 4.0.11
     dev: true
 
-  ? /eslint-plugin-unused-imports@3.2.0(@typescript-eslint/eslint-plugin@7.13.1)(eslint@8.57.0)
-  : resolution:
+  /eslint-plugin-unused-imports@3.2.0(@typescript-eslint/eslint-plugin@7.13.1)(eslint@8.57.0):
+    resolution:
       {
         integrity: sha512-6uXyn6xdINEpxE1MtDjxQsyXB37lfyO2yKGVVgtD7WEWQGORSOZjgrD6hBhvGv4/SO+TOlS+UnC6JppRqbuwGQ==,
       }
