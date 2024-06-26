@@ -52,7 +52,7 @@ export const isAuthenticated = (): boolean => {
 export const logIn = (
   username: string,
   password: string,
-  navigate: (path: string) => void
+  navigate: (path: string) => void,
 ): void => {
   setAuthenticationToken(btoa(`${username}:${password}`));
   api

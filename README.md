@@ -16,7 +16,7 @@ corepack enable
 pnpm install
 # To start a development server.
 pnpm dev
-# [Optional] Before committing code the first time
+# Install Playwright browsers.
 npx playwright install --with-deps
 ```
 
