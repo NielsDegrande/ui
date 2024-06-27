@@ -5,11 +5,11 @@
 set -eux
 
 # Start a development server.
-pnpm dev &
+pnpm dev --port 5175 &
 
 # Clean up on exit.
 clean_up() {
-    lsof -i:5173 -t | xargs kill -9
+    lsof -i:5175 -t | xargs kill -9
 }
 trap clean_up EXIT
 

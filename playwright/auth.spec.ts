@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 test("login and check elements", async ({ page }) => {
-  await page.goto("http://localhost:5173/");
+  await page.goto("http://localhost:5175/");
 
   // Fill out the login form.
   await page.fill('input[name="username"]', "your-username");
