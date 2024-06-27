@@ -16,6 +16,8 @@ corepack enable
 pnpm install
 # To start a development server.
 pnpm dev
+# Install Playwright browsers.
+npx playwright install --with-deps
 ```
 
 ## Generate API from Swagger

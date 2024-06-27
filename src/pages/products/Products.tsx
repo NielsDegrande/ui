@@ -62,64 +62,60 @@ const Products = () => {
   // });
 
   return (
-    <>
-      <Container>
-        <Sidebar />
-        <MainContent>
-          {products?.map((product) => (
-            <Card key={product.product_name}>
-              <Typography variant="h6">
-                {product.product_name.toUpperCase()}
-              </Typography>
-              <List>
-                <ListItem>
-                  <Typography variant="body1">
-                    Color: {product.color}
-                  </Typography>
-                </ListItem>
-                <ListItem>
-                  <Typography variant="body1">
-                    Price: ${product.price.toFixed(2)}
-                  </Typography>
-                </ListItem>
-              </List>
-            </Card>
-          ))}
-          <Card>
-            <Select
-              value={productId}
-              onChange={(event) => {
-                setProductId(event.target.value);
-              }}
-            >
-              {products?.map((product) => (
-                <MenuItem
-                  key={product.product_id}
-                  value={product.product_id?.toString()}
-                >
-                  {product.product_name}
-                </MenuItem>
-              ))}
-            </Select>
-            {selectedProduct && (
-              <Typography variant="h6">
-                {selectedProduct.product_name.toUpperCase()}
-              </Typography>
-            )}
+    <Container>
+      <Sidebar />
+      <MainContent>
+        {products?.map((product) => (
+          <Card key={product.product_name}>
+            <Typography variant="h6">
+              {product.product_name.toUpperCase()}
+            </Typography>
+            <List>
+              <ListItem>
+                <Typography variant="body1">Color: {product.color}</Typography>
+              </ListItem>
+              <ListItem>
+                <Typography variant="body1">
+                  Price: ${product.price.toFixed(2)}
+                </Typography>
+              </ListItem>
+            </List>
           </Card>
-          {product && (
-            <Card key={product.product_name}>
-              <PrimaryButton onClick={removeProduct}>
-                {t("products.remove")}
-              </PrimaryButton>
-              <Typography variant="h6">
-                {product.product_name.toUpperCase()}
-              </Typography>
-            </Card>
+        ))}
+        <Card>
+          <Select
+            value={productId}
+            onChange={(event) => {
+              setProductId(event.target.value);
+            }}
+          >
+            {products?.map((product) => (
+              <MenuItem
+                key={product.product_id}
+                value={product.product_id?.toString()}
+              >
+                {product.product_name}
+              </MenuItem>
+            ))}
+          </Select>
+          {selectedProduct && (
+            <Typography variant="h6">
+              {selectedProduct.product_name.toUpperCase()}
+            </Typography>
           )}
-        </MainContent>
-      </Container>
-    </>
+        </Card>
+        {product && (
+          <Card key={product.product_name}>
+            <PrimaryButton onClick={removeProduct}>
+              {t("products.remove")}
+            </PrimaryButton>
+            <Typography variant="h6">
+              {product.product_name.toUpperCase()}
+            </Typography>
+          </Card>
+        )}
+      </MainContent>
+    </Container>
   );
 };
 
