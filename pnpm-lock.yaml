@@ -103,8 +103,8 @@ importers:
         specifier: 2.29.1
         version: 2.29.1(@typescript-eslint/parser@7.13.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)
       eslint-plugin-no-relative-import-paths:
-        specifier: 1.5.4
-        version: 1.5.4
+        specifier: 1.5.5
+        version: 1.5.5
       eslint-plugin-react:
         specifier: 7.34.3
         version: 7.34.3(eslint@8.57.0)
@@ -1505,8 +1505,8 @@ packages:
       '@typescript-eslint/parser':
         optional: true
 
-  eslint-plugin-no-relative-import-paths@1.5.4:
-    resolution: {integrity: sha512-2smViH7R3682NR6dwgYr8Vm7emqNP1gEjBku6DbvUy3Ef/2Fz+mhwsFjZGSixzWzazMCj4MAgIWTsHELCCDJKA==}
+  eslint-plugin-no-relative-import-paths@1.5.5:
+    resolution: {integrity: sha512-UjudFFdBbv93v0CsVdEKcMLbBzRIjeK2PubTctX57tgnHxZcMj1Jm8lDBWoETnPxk0S5g5QLSltEM+511yL4+w==}
 
   eslint-plugin-react-hooks@4.6.0:
     resolution: {integrity: sha512-oFc7Itz9Qxh2x4gNHStv3BqJq54ExXmfC+a1NjAta66IAN87Wu0R/QArgIS9qKzX3dXKPI9H5crl9QchNMY9+g==}
@@ -4529,7 +4529,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-plugin-no-relative-import-paths@1.5.4: {}
+  eslint-plugin-no-relative-import-paths@1.5.5: {}
 
   eslint-plugin-react-hooks@4.6.0(eslint@8.57.0):
     dependencies:
