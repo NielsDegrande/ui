@@ -34,7 +34,7 @@
     "@mui/icons-material": "5.15.21",
     "@mui/material": "5.15.21",
     "@tanstack/react-query": "5.49.2",
-    "@tanstack/react-query-devtools": "5.37.1",
+    "@tanstack/react-query-devtools": "5.49.2",
     "axios": "1.7.2",
     "formik": "2.4.6",
     "i18next": "23.11.4",
