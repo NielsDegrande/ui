@@ -40,6 +40,9 @@ jobs:
       - name: Run knip
         run: pnpm knip
 
+      - name: Run pnpm audit
+        run: pnpm audit
+
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 

@@ -3,7 +3,7 @@
 ## Introduction
 
 This repository holds the UI.
-It incudes PNPM + React + TypeScript + Vite + SWC.
+It incudes pnpm + React + TypeScript + Vite + SWC.
 
 ## Getting Started
 
