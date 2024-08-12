@@ -136,8 +136,8 @@ importers:
         specifier: 3.3.3
         version: 3.3.3
       swagger-typescript-api:
-        specifier: 13.0.12
-        version: 13.0.12
+        specifier: 13.0.19
+        version: 13.0.19
       typescript:
         specifier: 5.4.5
         version: 5.4.5
@@ -2602,8 +2602,8 @@ packages:
   swagger-schema-official@2.0.0-bab6bed:
     resolution: {integrity: sha512-rCC0NWGKr/IJhtRuPq/t37qvZHI/mH4I4sxflVM+qgVe5Z2uOCivzWaVbuioJaB61kvm5UvB7b49E+oBY0M8jA==}
 
-  swagger-typescript-api@13.0.12:
-    resolution: {integrity: sha512-C+B5QV0BCCdlKGZSq/e8k/lC3AzHqBDMA5Zu9wdJyBE4NgEumXQmwDBcHHKkonGCyoF6mYjhJuBWAPJ6eNUB/w==}
+  swagger-typescript-api@13.0.19:
+    resolution: {integrity: sha512-2fCb04w1fjZNK/LUgbm/x2Z+oXXPx/x69d/rh+LnOso6cOUOr+gcPLkc4IvPchs/GytnMEiZp+L5v+OWQ4YLUg==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -5601,7 +5601,7 @@ snapshots:
 
   swagger-schema-official@2.0.0-bab6bed: {}
 
-  swagger-typescript-api@13.0.12:
+  swagger-typescript-api@13.0.19:
     dependencies:
       '@types/swagger-schema-official': 2.0.25
       cosmiconfig: 9.0.0(typescript@5.5.4)
