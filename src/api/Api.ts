@@ -137,12 +137,12 @@ export class Api<
    * @tags sample
    * @name GetProductsApiSampleProductGet
    * @summary Get Products
-   * @request GET:/api/sample/product
+   * @request GET:/api/sample/products
    * @secure
    */
   getProductsApiSampleProductGet = (params: RequestParams = {}) =>
     this.request<Product[], any>({
-      path: `/api/sample/product`,
+      path: `/api/sample/products`,
       method: "GET",
       secure: true,
       format: "json",
@@ -154,7 +154,7 @@ export class Api<
    * @tags sample
    * @name CreateProductApiSampleProductPost
    * @summary Create Product
-   * @request POST:/api/sample/product
+   * @request POST:/api/sample/products
    * @secure
    */
   createProductApiSampleProductPost = (
@@ -162,7 +162,7 @@ export class Api<
     params: RequestParams = {},
   ) =>
     this.request<Product, HTTPValidationError>({
-      path: `/api/sample/product`,
+      path: `/api/sample/products`,
       method: "POST",
       body: data,
       secure: true,
@@ -176,7 +176,7 @@ export class Api<
    * @tags sample
    * @name GetProductApiSampleProductProductIdGet
    * @summary Get Product
-   * @request GET:/api/sample/product/{product_id}
+   * @request GET:/api/sample/products/{product_id}
    * @secure
    */
   getProductApiSampleProductProductIdGet = (
@@ -184,7 +184,7 @@ export class Api<
     params: RequestParams = {},
   ) =>
     this.request<Product, HTTPValidationError>({
-      path: `/api/sample/product/${productId}`,
+      path: `/api/sample/products/${productId}`,
       method: "GET",
       secure: true,
       format: "json",
@@ -196,7 +196,7 @@ export class Api<
    * @tags sample
    * @name UpdateProductApiSampleProductProductIdPut
    * @summary Update Product
-   * @request PUT:/api/sample/product/{product_id}
+   * @request PUT:/api/sample/products/{product_id}
    * @secure
    */
   updateProductApiSampleProductProductIdPut = (
@@ -205,7 +205,7 @@ export class Api<
     params: RequestParams = {},
   ) =>
     this.request<Product, HTTPValidationError>({
-      path: `/api/sample/product/${productId}`,
+      path: `/api/sample/products/${productId}`,
       method: "PUT",
       body: data,
       secure: true,
@@ -219,7 +219,7 @@ export class Api<
    * @tags sample
    * @name DeleteProductApiSampleProductProductIdDelete
    * @summary Delete Product
-   * @request DELETE:/api/sample/product/{product_id}
+   * @request DELETE:/api/sample/products/{product_id}
    * @secure
    */
   deleteProductApiSampleProductProductIdDelete = (
@@ -227,7 +227,7 @@ export class Api<
     params: RequestParams = {},
   ) =>
     this.request<any, HTTPValidationError>({
-      path: `/api/sample/product/${productId}`,
+      path: `/api/sample/products/${productId}`,
       method: "DELETE",
       secure: true,
       format: "json",
