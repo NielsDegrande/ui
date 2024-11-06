@@ -9,7 +9,7 @@ import Error from "src/pages/error/Error";
 /**
  * Renders the Not Found page.
  */
-const NotFound = () => {
+const NotFound: React.FC = () => {
   const { t } = useTranslation();
   return (
     <ErrorBoundary fallback={<Error />}>

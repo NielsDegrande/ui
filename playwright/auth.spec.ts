@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { test, expect } from "@playwright/test";
 
 test("login and check elements", async ({ page }) => {

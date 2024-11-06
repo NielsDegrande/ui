@@ -11,7 +11,7 @@ import { isAuthenticated } from "src/utils/authentication";
  *
  * @returns The rendered protected route component.
  */
-const ProtectedRoute = () => {
+const ProtectedRoute: React.FC = () => {
   return isAuthenticated() ? (
     <ErrorBoundary fallback={<Error />}>
       <Outlet />

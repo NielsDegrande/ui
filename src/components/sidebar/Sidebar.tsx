@@ -73,7 +73,7 @@ const Drawer = muiStyled(MuiDrawer, {
  *
  * @returns The sidebar component.
  */
-const Sidebar = () => {
+const Sidebar: React.FC = () => {
   const navigate = useNavigate();
   const [open, setOpen] = useState(true);
   const toggleOpen = () => {

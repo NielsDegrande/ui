@@ -19,7 +19,7 @@ import { QueryKey } from "src/utils/query-keys";
 /**
  * Renders the Products page.
  */
-const Products = () => {
+const Products: React.FC = () => {
   // Fetch all products.
   const { data: products } = useQuery({
     queryKey: QueryKey.products,

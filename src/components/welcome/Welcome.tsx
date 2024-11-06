@@ -8,7 +8,7 @@ import { t } from "i18next";
 
 import logo from "/logo.png";
 
-const Welcome = () => {
+const Welcome: React.FC = () => {
   return (
     <>
       <LoginImage src={logo} alt={t("login.logo")} />

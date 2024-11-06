@@ -2,6 +2,6 @@
  * Capture all query keys.
  */
 export const QueryKey = {
-  products: ["products"],
-  product: (productId: number) => ["product", productId],
+  products: ["products"] as const,
+  product: (productId: number): [string, number] => ["product", productId],
 };

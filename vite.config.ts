@@ -1,6 +1,5 @@
 import react from "@vitejs/plugin-react-swc";
 import { defineConfig } from "vite";
-
 import type { UserConfig } from "vitest/config";
 
 const viteConfig: UserConfig = {

@@ -7,7 +7,7 @@ import { PrimaryButton } from "src/components/primary-button/PrimaryButton";
 /**
  * Renders the Error page.
  */
-const Error = () => {
+const Error: React.FC = () => {
   const { t } = useTranslation();
   return (
     <CenterMiddleContainer>

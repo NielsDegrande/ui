@@ -79,7 +79,7 @@ export const logIn = (
  * Logs out the user and navigates to the authentication page.
  * @param navigate - A function used for navigation.
  */
-export const logOut = (navigate: (path: string) => void) => {
+export const logOut = (navigate: (path: string) => void): void => {
   removeAuthenticationToken();
   navigate(Path.AUTH);
 };

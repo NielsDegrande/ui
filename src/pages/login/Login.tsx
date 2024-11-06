@@ -22,7 +22,7 @@ const validationSchema = Yup.object({
 /**
  * Renders the Login page.
  */
-const Login = () => {
+const Login: React.FC = () => {
   const navigate = useNavigate();
   return (
     <ErrorBoundary fallback={<Error />}>

@@ -5,7 +5,7 @@ import Welcome from "src/components/welcome/Welcome";
 /**
  * Renders the Home page.
  */
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <>
       <Sidebar />;

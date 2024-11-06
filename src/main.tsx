@@ -15,14 +15,16 @@ import NotFound from "src/pages/not-found/NotFound";
 import Products from "src/pages/products/Products";
 import { Path } from "src/utils/paths";
 import { queryClient } from "src/utils/query-client";
-const { worker } = await import("src/mocks/browser");
 
 import "react-toastify/dist/ReactToastify.css";
 import "src/locales/i18n";
 
+const { worker } = await import("src/mocks/browser");
+
 // `worker.start()` returns a Promise that resolves
 // once the Service Worker is up and ready to intercept requests.
 if (import.meta.env.VITE_USE_MOCK_API !== "false") {
+  // eslint-disable-next-line no-console
   console.log("Using mock API");
   void worker.start();
 }
