@@ -50,7 +50,7 @@
   "devDependencies": {
     "@eslint/compat": "^1.2.3",
     "@playwright/test": "1.48.2",
-    "@testing-library/jest-dom": "6.5.0",
+    "@testing-library/jest-dom": "6.6.3",
     "@testing-library/react": "16.0.1",
     "@types/node": "22.9.3",
     "@types/react": "18.3.12",
