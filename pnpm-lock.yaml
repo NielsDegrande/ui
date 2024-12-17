@@ -100,8 +100,8 @@ importers:
         specifier: 8.17.0
         version: 8.17.0(eslint@9.7.0)(typescript@5.7.2)
       '@vitejs/plugin-react-swc':
-        specifier: 3.7.1
-        version: 3.7.1(vite@5.4.10(@types/node@22.9.3))
+        specifier: 3.7.2
+        version: 3.7.2(vite@5.4.10(@types/node@22.9.3))
       '@vitest/coverage-v8':
         specifier: 2.0.5
         version: 2.0.5(vitest@2.0.5(@types/node@22.9.3)(jsdom@25.0.1))
@@ -985,8 +985,8 @@ packages:
     resolution: {integrity: sha512-1Hm7THLpO6ww5QU6H/Qp+AusUUl+z/CAm3cNZZ0jQvon9yicgO7Rwd+/WWRpMKLYV6p2UvdbR27c86rzCPpreg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@vitejs/plugin-react-swc@3.7.1':
-    resolution: {integrity: sha512-vgWOY0i1EROUK0Ctg1hwhtC3SdcDjZcdit4Ups4aPkDcB1jYhmo+RMYWY87cmXMhvtD5uf8lV89j2w16vkdSVg==}
+  '@vitejs/plugin-react-swc@3.7.2':
+    resolution: {integrity: sha512-y0byko2b2tSVVf5Gpng1eEhX1OvPC7x8yns1Fx8jDzlJp4LS6CMkCPfLw47cjyoMrshQDoQw4qcgjsU9VvlCew==}
     peerDependencies:
       vite: '>=5.4.6'
 
@@ -3773,7 +3773,7 @@ snapshots:
       '@typescript-eslint/types': 8.17.0
       eslint-visitor-keys: 4.2.0
 
-  '@vitejs/plugin-react-swc@3.7.1(vite@5.4.10(@types/node@22.9.3))':
+  '@vitejs/plugin-react-swc@3.7.2(vite@5.4.10(@types/node@22.9.3))':
     dependencies:
       '@swc/core': 1.7.26
       vite: 5.4.10(@types/node@22.9.3)
