@@ -31,6 +31,7 @@ When executing the above, make sure the API is running.
 ## Component Libraries & Styling
 
 Material UI and emotion styled components are used to define the user interface.
+One can use globalStyles and (dynamic) themes to style the application, and styled components to style individual components.
 Toastify is used to show toast to the user.
 Formik is used to capture user input. Yup for validation.
 

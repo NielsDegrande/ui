@@ -16,6 +16,8 @@ import Products from "src/pages/products/Products";
 import { Path } from "src/utils/paths";
 import { queryClient } from "src/utils/query-client";
 
+import ThemeProvider from "./theme";
+
 import "react-toastify/dist/ReactToastify.css";
 import "src/locales/i18n";
 
@@ -58,12 +60,14 @@ const rootElement = document.getElementById("root");
 if (rootElement) {
   ReactDOM.createRoot(rootElement).render(
     <React.StrictMode>
-      <Global styles={globalStyles} />
-      <QueryClientProvider client={queryClient}>
-        <ToastContainer position="top-center" />
-        <RouterProvider router={router} />
-        <ReactQueryDevtools />
-      </QueryClientProvider>
+      <ThemeProvider>
+        <Global styles={globalStyles} />
+        <QueryClientProvider client={queryClient}>
+          <ToastContainer position="top-center" />
+          <RouterProvider router={router} />
+          <ReactQueryDevtools />
+        </QueryClientProvider>
+      </ThemeProvider>
     </React.StrictMode>,
   );
 }

@@ -14,7 +14,7 @@ export const handlers = [
       { status: 200 },
     );
   }),
-  http.get(`${API_URL}/api/sample/product`, () => {
+  http.get(`${API_URL}/api/sample/products`, () => {
     return HttpResponse.json(
       [
         {
