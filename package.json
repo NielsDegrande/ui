@@ -37,7 +37,7 @@
     "@tanstack/react-query-devtools": "5.66.0",
     "axios": "1.7.9",
     "formik": "2.4.6",
-    "i18next": "24.2.1",
+    "i18next": "24.2.2",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-error-boundary": "5.0.0",
@@ -56,9 +56,9 @@
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
     "@typescript-eslint/eslint-plugin": "8.18.2",
-    "@typescript-eslint/parser": "8.19.1",
+    "@typescript-eslint/parser": "8.24.0",
     "@vitejs/plugin-react-swc": "3.7.2",
-    "@vitest/coverage-v8": "2.0.5",
+    "@vitest/coverage-v8": "2.1.9",
     "eslint": "9.20.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-import": "2.31.0",
@@ -66,9 +66,9 @@
     "eslint-plugin-prettier": "^5.2.3",
     "eslint-plugin-react": "7.37.4",
     "eslint-plugin-react-hooks": "5.1.0",
-    "eslint-plugin-react-refresh": "0.4.18",
+    "eslint-plugin-react-refresh": "0.4.19",
     "eslint-plugin-unused-imports": "4.1.4",
-    "globals": "^15.14.0",
+    "globals": "^15.15.0",
     "husky": "9.1.7",
     "jsdom": "26.0.0",
     "knip": "5.43.6",
@@ -76,8 +76,8 @@
     "prettier": "3.4.2",
     "swagger-typescript-api": "13.0.23",
     "typescript": "5.7.3",
-    "vite": "6.0.7",
-    "vitest": "2.0.5"
+    "vite": "6.1.0",
+    "vitest": "2.1.9"
   },
   "msw": {
     "workerDirectory": [
@@ -86,19 +86,15 @@
   },
   "pnpm": {
     "overrides": {
-      "ws@>=8.0.0 <8.17.1": ">=8.17.1",
-      "micromatch@<4.0.8": ">=4.0.8",
-      "path-to-regexp@>=4.0.0 <6.3.0": ">=6.3.0",
-      "vite@>=5.4.0 <5.4.6": ">=5.4.6",
-      "vite@>=5.4.0 <=5.4.5": ">=5.4.6",
-      "rollup@>=4.0.0 <4.22.4": ">=4.22.4",
       "cookie@<0.7.0": ">=0.7.0",
       "cross-spawn@>=7.0.0 <7.0.5": ">=7.0.5",
-      "smol-toml@<=1.3.0": ">=1.3.1",
-      "nanoid@<3.3.8": ">=3.3.8",
-      "vite@>=6.0.0 <=6.0.8": ">=6.0.9",
       "esbuild@<=0.24.2": ">=0.25.0",
-      "vitest@>=2.0.0 <2.1.9": ">=2.1.9"
+      "micromatch@<4.0.8": ">=4.0.8",
+      "nanoid@<3.3.8": ">=3.3.8",
+      "path-to-regexp@>=4.0.0 <6.3.0": ">=6.3.0",
+      "rollup@>=4.0.0 <4.22.4": ">=4.22.4",
+      "smol-toml@<=1.3.0": ">=1.3.1",
+      "ws@>=8.0.0 <8.17.1": ">=8.17.1"
     }
   },
   "packageManager": "pnpm@9.15.0"
