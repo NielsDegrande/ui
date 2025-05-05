@@ -101,7 +101,7 @@ importers:
         version: 8.31.0(eslint@9.26.0(jiti@2.4.2))(typescript@5.8.2)
       '@vitejs/plugin-react-swc':
         specifier: 3.8.1
-        version: 3.8.1(vite@6.3.4(@types/node@22.13.10)(jiti@2.4.2))
+        version: 3.8.1(vite@6.3.5(@types/node@22.13.10)(jiti@2.4.2))
       '@vitest/coverage-v8':
         specifier: 2.1.9
         version: 2.1.9(vitest@2.1.9(@types/node@22.13.10)(jsdom@26.1.0)(msw@2.7.3(@types/node@22.13.10)(typescript@5.8.2)))
@@ -157,8 +157,8 @@ importers:
         specifier: 5.8.2
         version: 5.8.2
       vite:
-        specifier: 6.3.4
-        version: 6.3.4(@types/node@22.13.10)(jiti@2.4.2)
+        specifier: 6.3.5
+        version: 6.3.5(@types/node@22.13.10)(jiti@2.4.2)
       vitest:
         specifier: 2.1.9
         version: 2.1.9(@types/node@22.13.10)(jsdom@26.1.0)(msw@2.7.3(@types/node@22.13.10)(typescript@5.8.2))
@@ -3298,8 +3298,8 @@ packages:
       terser:
         optional: true
 
-  vite@6.3.4:
-    resolution: {integrity: sha512-BiReIiMS2fyFqbqNT/Qqt4CVITDU9M9vE+DKcVAsB+ZV0wvTKd+3hMbkpxz1b+NmEDMegpVbisKiAZOnvO92Sw==}
+  vite@6.3.5:
+    resolution: {integrity: sha512-cZn6NDFE7wdTpINgs++ZJ4N49W2vRp8LCKrn3Ob1kYNtOo21vfDoaV5GzBfLU4MovSAB8uNRm4jgzVQZ+mBzPQ==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
     peerDependencies:
@@ -4378,10 +4378,10 @@ snapshots:
       '@typescript-eslint/types': 8.31.0
       eslint-visitor-keys: 4.2.0
 
-  '@vitejs/plugin-react-swc@3.8.1(vite@6.3.4(@types/node@22.13.10)(jiti@2.4.2))':
+  '@vitejs/plugin-react-swc@3.8.1(vite@6.3.5(@types/node@22.13.10)(jiti@2.4.2))':
     dependencies:
       '@swc/core': 1.11.13
-      vite: 6.3.4(@types/node@22.13.10)(jiti@2.4.2)
+      vite: 6.3.5(@types/node@22.13.10)(jiti@2.4.2)
     transitivePeerDependencies:
       - '@swc/helpers'
 
@@ -7009,7 +7009,7 @@ snapshots:
       '@types/node': 22.13.10
       fsevents: 2.3.3
 
-  vite@6.3.4(@types/node@22.13.10)(jiti@2.4.2):
+  vite@6.3.5(@types/node@22.13.10)(jiti@2.4.2):
     dependencies:
       esbuild: 0.25.3
       fdir: 6.4.4(picomatch@4.0.2)
