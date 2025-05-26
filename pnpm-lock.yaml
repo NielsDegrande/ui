@@ -45,8 +45,8 @@ importers:
         specifier: 2.4.6
         version: 2.4.6(react@18.3.1)
       i18next:
-        specifier: 25.0.1
-        version: 25.0.1(typescript@5.8.3)
+        specifier: 25.2.1
+        version: 25.2.1(typescript@5.8.3)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -58,7 +58,7 @@ importers:
         version: 6.0.0(react@18.3.1)
       react-i18next:
         specifier: 15.5.1
-        version: 15.5.1(i18next@25.0.1(typescript@5.8.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3)
+        version: 15.5.1(i18next@25.2.1(typescript@5.8.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3)
       react-router-dom:
         specifier: 7.6.1
         version: 7.6.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -2040,8 +2040,8 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  i18next@25.0.1:
-    resolution: {integrity: sha512-8S8PyZbrymJZn3DaN70/34JYWNhsqrU6yA4MuzcygJBv+41dgNMocEA8h+kV1P7MCc1ll03lOTOIXE7mpNCicw==}
+  i18next@25.2.1:
+    resolution: {integrity: sha512-+UoXK5wh+VlE1Zy5p6MjcvctHXAhRwQKCxiJD8noKZzIXmnAX8gdHX5fLPA3MEVxEN4vbZkQFy8N0LyD9tUqPw==}
     peerDependencies:
       typescript: ^5
     peerDependenciesMeta:
@@ -5601,9 +5601,9 @@ snapshots:
 
   husky@9.1.7: {}
 
-  i18next@25.0.1(typescript@5.8.3):
+  i18next@25.2.1(typescript@5.8.3):
     dependencies:
-      '@babel/runtime': 7.27.0
+      '@babel/runtime': 7.27.1
     optionalDependencies:
       typescript: 5.8.3
 
@@ -6323,11 +6323,11 @@ snapshots:
 
   react-fast-compare@2.0.4: {}
 
-  react-i18next@15.5.1(i18next@25.0.1(typescript@5.8.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3):
+  react-i18next@15.5.1(i18next@25.2.1(typescript@5.8.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3):
     dependencies:
       '@babel/runtime': 7.27.1
       html-parse-stringify: 3.0.1
-      i18next: 25.0.1(typescript@5.8.3)
+      i18next: 25.2.1(typescript@5.8.3)
       react: 18.3.1
     optionalDependencies:
       react-dom: 18.3.1(react@18.3.1)
