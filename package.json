@@ -42,7 +42,7 @@
     "react-dom": "18.3.1",
     "react-error-boundary": "6.0.0",
     "react-i18next": "15.5.1",
-    "react-router-dom": "7.6.0",
+    "react-router-dom": "7.6.1",
     "react-toastify": "11.0.5",
     "yup": "1.6.1",
     "zustand": "5.0.4"
