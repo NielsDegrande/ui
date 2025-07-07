@@ -1,10 +1,10 @@
+import { t } from "i18next";
+
 import {
   AppNameText,
   LoginImage,
   WelcomeText,
 } from "src/components/welcome/Welcome.styled";
-
-import { t } from "i18next";
 
 import logo from "/logo.png";
 
