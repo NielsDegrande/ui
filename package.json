@@ -1,8 +1,16 @@
 {
   "name": "ui",
-  "private": true,
   "version": "0.0.0",
+  "description": "A user interface template for React applications.",
+  "keywords": [
+    "react",
+    "template",
+    "ui"
+  ],
+  "author": "Niels Degrande <niels@degran.de>",
+  "private": true,
   "type": "module",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc && vite build",
     "dev": "vite",
