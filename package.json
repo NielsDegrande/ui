@@ -84,7 +84,7 @@
     "prettier": "3.6.2",
     "swagger-typescript-api": "13.2.7",
     "typescript": "5.8.3",
-    "vite": "6.3.5",
+    "vite": "7.0.5",
     "vitest": "2.1.9"
   },
   "msw": {
