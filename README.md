@@ -18,6 +18,8 @@ pnpm install
 pnpm dev
 # Install Playwright browsers.
 npx playwright install --with-deps
+# Initialize husky.
+pnpm husky init
 ```
 
 ## Generate API from Swagger
