@@ -1,0 +1,16 @@
+---
+description: Typescript coding guidelines.
+globs: *.ts,*.tsx
+alwaysApply: false
+---
+# TypeScript
+
+## Structure
+
+- Avoid putting all in one index.ts file. Use multiple files to improve readability and maintainability.
+
+## Commenting and Documentation
+
+- Write TSDoc comments for all public classes, methods, and functions. At least use the `@param` tag for parameters and `@returns` for return values.
+- End all inline comments with a period.
+- Use a space after the comment marker.

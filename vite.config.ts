@@ -1,6 +1,6 @@
 import react from "@vitejs/plugin-react-swc";
 import { defineConfig } from "vite";
-import type { UserConfig } from "vitest/config";
+import type { UserConfig } from "vite";
 
 const viteConfig: UserConfig = {
   build: {
@@ -11,12 +11,6 @@ const viteConfig: UserConfig = {
     alias: {
       src: "/src",
     },
-  },
-  test: {
-    environment: "jsdom",
-    exclude: ["**/node_modules/**", "**/playwright/**"],
-    globals: true,
-    setupFiles: ["src/setupTests.ts"],
   },
 };
 
