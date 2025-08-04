@@ -1,11 +1,27 @@
 {
   "compilerOptions": {
-    "composite": true,
-    "skipLibCheck": true,
+    /* Target & Environment */
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "types": ["node"],
+
+    /* Module System */
     "module": "ESNext",
     "moduleResolution": "bundler",
+
+    /* Import/Export */
     "allowSyntheticDefaultImports": true,
-    "strict": true
+    "esModuleInterop": true,
+
+    /* Compilation */
+    "isolatedModules": true,
+    "skipLibCheck": true,
+
+    /* Code Quality */
+    "strict": true,
+
+    /* Project References */
+    "composite": true
   },
-  "include": ["vite.config.ts"]
+  "include": ["vite.config.ts", "vitest.config.ts", "playwright.config.ts"]
 }
