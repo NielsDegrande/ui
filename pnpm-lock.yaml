@@ -59,8 +59,8 @@ importers:
         specifier: 6.0.0
         version: 6.0.0(react@18.3.1)
       react-i18next:
-        specifier: 15.6.0
-        version: 15.6.0(i18next@25.3.2(typescript@5.8.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3)
+        specifier: 15.6.1
+        version: 15.6.1(i18next@25.3.2(typescript@5.8.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3)
       react-router-dom:
         specifier: 7.7.1
         version: 7.7.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -2592,8 +2592,8 @@ packages:
   react-fast-compare@2.0.4:
     resolution: {integrity: sha512-suNP+J1VU1MWFKcyt7RtjiSWUjvidmQSlqu+eHslq+342xCbGTYmC0mEhPCOHxlW0CywylOC1u2DFAT+bv4dBw==}
 
-  react-i18next@15.6.0:
-    resolution: {integrity: sha512-W135dB0rDfiFmbMipC17nOhGdttO5mzH8BivY+2ybsQBbXvxWIwl3cmeH3T9d+YPBSJu/ouyJKFJTtkK7rJofw==}
+  react-i18next@15.6.1:
+    resolution: {integrity: sha512-uGrzSsOUUe2sDBG/+FJq2J1MM+Y4368/QW8OLEKSFvnDflHBbZhSd1u3UkW0Z06rMhZmnB/AQrhCpYfE5/5XNg==}
     peerDependencies:
       i18next: '>= 23.2.3'
       react: '>= 16.8.0'
@@ -3802,7 +3802,7 @@ snapshots:
 
   '@mui/system@5.17.1(@emotion/react@11.14.0(@types/react@18.3.12)(react@18.3.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.12)(react@18.3.1))(@types/react@18.3.12)(react@18.3.1))(@types/react@18.3.12)(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.28.2
+      '@babel/runtime': 7.27.0
       '@mui/private-theming': 5.17.1(@types/react@18.3.12)(react@18.3.1)
       '@mui/styled-engine': 5.16.14(@emotion/react@11.14.0(@types/react@18.3.12)(react@18.3.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.12)(react@18.3.1))(@types/react@18.3.12)(react@18.3.1))(react@18.3.1)
       '@mui/types': 7.2.24(@types/react@18.3.12)
@@ -3822,7 +3822,7 @@ snapshots:
 
   '@mui/utils@5.17.1(@types/react@18.3.12)(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.28.2
+      '@babel/runtime': 7.27.0
       '@mui/types': 7.2.24(@types/react@18.3.12)
       '@types/prop-types': 15.7.14
       clsx: 2.1.1
@@ -5882,9 +5882,9 @@ snapshots:
 
   react-fast-compare@2.0.4: {}
 
-  react-i18next@15.6.0(i18next@25.3.2(typescript@5.8.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3):
+  react-i18next@15.6.1(i18next@25.3.2(typescript@5.8.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3):
     dependencies:
-      '@babel/runtime': 7.27.6
+      '@babel/runtime': 7.28.2
       html-parse-stringify: 3.0.1
       i18next: 25.3.2(typescript@5.8.3)
       react: 18.3.1
@@ -5920,7 +5920,7 @@ snapshots:
 
   react-transition-group@4.4.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
-      '@babel/runtime': 7.28.2
+      '@babel/runtime': 7.27.0
       dom-helpers: 5.2.1
       loose-envify: 1.4.0
       prop-types: 15.8.1
