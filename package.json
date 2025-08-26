@@ -80,7 +80,7 @@
     "husky": "9.1.7",
     "jsdom": "26.1.0",
     "knip": "5.62.0",
-    "msw": "2.10.4",
+    "msw": "2.10.5",
     "prettier": "3.6.2",
     "swagger-typescript-api": "13.2.7",
     "typescript": "5.8.3",
