@@ -79,7 +79,7 @@
     "globals": "^16.4.0",
     "husky": "9.1.7",
     "jsdom": "27.0.0",
-    "knip": "5.62.0",
+    "knip": "5.63.1",
     "msw": "2.11.2",
     "prettier": "3.6.2",
     "swagger-typescript-api": "13.2.8",
