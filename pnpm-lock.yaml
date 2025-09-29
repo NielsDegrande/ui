@@ -87,8 +87,8 @@ importers:
         specifier: 16.3.0
         version: 16.3.0(@testing-library/dom@10.1.0)(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/node':
-        specifier: 24.4.0
-        version: 24.4.0
+        specifier: 24.6.0
+        version: 24.6.0
       '@types/react':
         specifier: 18.3.12
         version: 18.3.12
@@ -103,10 +103,10 @@ importers:
         version: 8.44.0(eslint@9.35.0(jiti@2.6.0))(typescript@5.8.3)
       '@vitejs/plugin-react-swc':
         specifier: 4.1.0
-        version: 4.1.0(vite@7.1.7(@types/node@24.4.0)(jiti@2.6.0)(yaml@2.8.1))
+        version: 4.1.0(vite@7.1.7(@types/node@24.6.0)(jiti@2.6.0)(yaml@2.8.1))
       '@vitest/coverage-v8':
         specifier: 2.1.9
-        version: 2.1.9(vitest@2.1.9(@types/node@24.4.0)(jsdom@27.0.0(postcss@8.5.6))(msw@2.11.2(@types/node@24.4.0)(typescript@5.8.3)))
+        version: 2.1.9(vitest@2.1.9(@types/node@24.6.0)(jsdom@27.0.0(postcss@8.5.6))(msw@2.11.2(@types/node@24.6.0)(typescript@5.8.3)))
       eslint:
         specifier: 9.35.0
         version: 9.35.0(jiti@2.6.0)
@@ -145,10 +145,10 @@ importers:
         version: 27.0.0(postcss@8.5.6)
       knip:
         specifier: 5.64.1
-        version: 5.64.1(@types/node@24.4.0)(typescript@5.8.3)
+        version: 5.64.1(@types/node@24.6.0)(typescript@5.8.3)
       msw:
         specifier: 2.11.2
-        version: 2.11.2(@types/node@24.4.0)(typescript@5.8.3)
+        version: 2.11.2(@types/node@24.6.0)(typescript@5.8.3)
       prettier:
         specifier: 3.6.2
         version: 3.6.2
@@ -160,10 +160,10 @@ importers:
         version: 5.8.3
       vite:
         specifier: 7.1.7
-        version: 7.1.7(@types/node@24.4.0)(jiti@2.6.0)(yaml@2.8.1)
+        version: 7.1.7(@types/node@24.6.0)(jiti@2.6.0)(yaml@2.8.1)
       vitest:
         specifier: 2.1.9
-        version: 2.1.9(@types/node@24.4.0)(jsdom@27.0.0(postcss@8.5.6))(msw@2.11.2(@types/node@24.4.0)(typescript@5.8.3))
+        version: 2.1.9(@types/node@24.6.0)(jsdom@27.0.0(postcss@8.5.6))(msw@2.11.2(@types/node@24.6.0)(typescript@5.8.3))
 
 packages:
 
@@ -1154,8 +1154,8 @@ packages:
   '@types/lodash@4.17.20':
     resolution: {integrity: sha512-H3MHACvFUEiujabxhaI/ImO6gUrd8oOurg7LQtS7mbwIXA/cUqWrvBsaeJ23aZEPk1TAYkurjfMbSELfoCXlGA==}
 
-  '@types/node@24.4.0':
-    resolution: {integrity: sha512-gUuVEAK4/u6F9wRLznPUU4WGUacSEBDPoC2TrBkw3GAnOLHBL45QdfHOXp1kJ4ypBGLxTOB+t7NJLpKoC3gznQ==}
+  '@types/node@24.6.0':
+    resolution: {integrity: sha512-F1CBxgqwOMc4GKJ7eY22hWhBVQuMYTtqI8L0FcszYcpYX0fzfDGpez22Xau8Mgm7O9fI+zA/TYIdq3tGWfweBA==}
 
   '@types/parse-json@4.0.2':
     resolution: {integrity: sha512-dISoDXWWQwUquiKsyZ4Ng+HX2KsPL7LyHKHQwgGFEA3IaKac4Obd+h2a/a6waisAoepJlBcx9paWqjA8/HVjCw==}
@@ -3086,8 +3086,8 @@ packages:
     resolution: {integrity: sha512-nWJ91DjeOkej/TA8pXQ3myruKpKEYgqvpw9lz4OPHj/NWFNluYrjbz9j01CJ8yKQd2g4jFoOkINCTW2I5LEEyw==}
     engines: {node: '>= 0.4'}
 
-  undici-types@7.11.0:
-    resolution: {integrity: sha512-kt1ZriHTi7MU+Z/r9DOdAI3ONdaR3M3csEaRc6ewa4f4dTvX4cQCbJ4NkEn0ohE4hHtq85+PhPSTY+pO/1PwgA==}
+  undici-types@7.13.0:
+    resolution: {integrity: sha512-Ov2Rr9Sx+fRgagJ5AX0qvItZG/JKKoBRAVITs1zk7IqZGTJUwgUr7qoYBpWwakpWilTZFM98rG/AFRocu10iIQ==}
 
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
@@ -3731,31 +3731,31 @@ snapshots:
 
   '@inquirer/ansi@1.0.0': {}
 
-  '@inquirer/confirm@5.1.18(@types/node@24.4.0)':
+  '@inquirer/confirm@5.1.18(@types/node@24.6.0)':
     dependencies:
-      '@inquirer/core': 10.2.2(@types/node@24.4.0)
-      '@inquirer/type': 3.0.8(@types/node@24.4.0)
+      '@inquirer/core': 10.2.2(@types/node@24.6.0)
+      '@inquirer/type': 3.0.8(@types/node@24.6.0)
     optionalDependencies:
-      '@types/node': 24.4.0
+      '@types/node': 24.6.0
 
-  '@inquirer/core@10.2.2(@types/node@24.4.0)':
+  '@inquirer/core@10.2.2(@types/node@24.6.0)':
     dependencies:
       '@inquirer/ansi': 1.0.0
       '@inquirer/figures': 1.0.13
-      '@inquirer/type': 3.0.8(@types/node@24.4.0)
+      '@inquirer/type': 3.0.8(@types/node@24.6.0)
       cli-width: 4.1.0
       mute-stream: 2.0.0
       signal-exit: 4.1.0
       wrap-ansi: 6.2.0
       yoctocolors-cjs: 2.1.3
     optionalDependencies:
-      '@types/node': 24.4.0
+      '@types/node': 24.6.0
 
   '@inquirer/figures@1.0.13': {}
 
-  '@inquirer/type@3.0.8(@types/node@24.4.0)':
+  '@inquirer/type@3.0.8(@types/node@24.6.0)':
     optionalDependencies:
-      '@types/node': 24.4.0
+      '@types/node': 24.6.0
 
   '@isaacs/cliui@8.0.2':
     dependencies:
@@ -4177,9 +4177,9 @@ snapshots:
 
   '@types/lodash@4.17.20': {}
 
-  '@types/node@24.4.0':
+  '@types/node@24.6.0':
     dependencies:
-      undici-types: 7.11.0
+      undici-types: 7.13.0
 
   '@types/parse-json@4.0.2': {}
 
@@ -4297,15 +4297,15 @@ snapshots:
       '@typescript-eslint/types': 8.44.0
       eslint-visitor-keys: 4.2.1
 
-  '@vitejs/plugin-react-swc@4.1.0(vite@7.1.7(@types/node@24.4.0)(jiti@2.6.0)(yaml@2.8.1))':
+  '@vitejs/plugin-react-swc@4.1.0(vite@7.1.7(@types/node@24.6.0)(jiti@2.6.0)(yaml@2.8.1))':
     dependencies:
       '@rolldown/pluginutils': 1.0.0-beta.35
       '@swc/core': 1.13.5
-      vite: 7.1.7(@types/node@24.4.0)(jiti@2.6.0)(yaml@2.8.1)
+      vite: 7.1.7(@types/node@24.6.0)(jiti@2.6.0)(yaml@2.8.1)
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@vitest/coverage-v8@2.1.9(vitest@2.1.9(@types/node@24.4.0)(jsdom@27.0.0(postcss@8.5.6))(msw@2.11.2(@types/node@24.4.0)(typescript@5.8.3)))':
+  '@vitest/coverage-v8@2.1.9(vitest@2.1.9(@types/node@24.6.0)(jsdom@27.0.0(postcss@8.5.6))(msw@2.11.2(@types/node@24.6.0)(typescript@5.8.3)))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@bcoe/v8-coverage': 0.2.3
@@ -4319,7 +4319,7 @@ snapshots:
       std-env: 3.8.0
       test-exclude: 7.0.1
       tinyrainbow: 1.2.0
-      vitest: 2.1.9(@types/node@24.4.0)(jsdom@27.0.0(postcss@8.5.6))(msw@2.11.2(@types/node@24.4.0)(typescript@5.8.3))
+      vitest: 2.1.9(@types/node@24.6.0)(jsdom@27.0.0(postcss@8.5.6))(msw@2.11.2(@types/node@24.6.0)(typescript@5.8.3))
     transitivePeerDependencies:
       - supports-color
 
@@ -4330,14 +4330,14 @@ snapshots:
       chai: 5.2.0
       tinyrainbow: 1.2.0
 
-  '@vitest/mocker@2.1.9(msw@2.11.2(@types/node@24.4.0)(typescript@5.8.3))(vite@5.4.20(@types/node@24.4.0))':
+  '@vitest/mocker@2.1.9(msw@2.11.2(@types/node@24.6.0)(typescript@5.8.3))(vite@5.4.20(@types/node@24.6.0))':
     dependencies:
       '@vitest/spy': 2.1.9
       estree-walker: 3.0.3
       magic-string: 0.30.17
     optionalDependencies:
-      msw: 2.11.2(@types/node@24.4.0)(typescript@5.8.3)
-      vite: 5.4.20(@types/node@24.4.0)
+      msw: 2.11.2(@types/node@24.6.0)(typescript@5.8.3)
+      vite: 5.4.20(@types/node@24.6.0)
 
   '@vitest/pretty-format@2.1.9':
     dependencies:
@@ -5585,10 +5585,10 @@ snapshots:
     dependencies:
       json-buffer: 3.0.1
 
-  knip@5.64.1(@types/node@24.4.0)(typescript@5.8.3):
+  knip@5.64.1(@types/node@24.6.0)(typescript@5.8.3):
     dependencies:
       '@nodelib/fs.walk': 1.2.8
-      '@types/node': 24.4.0
+      '@types/node': 24.6.0
       fast-glob: 3.3.3
       formatly: 0.3.0
       jiti: 2.6.0
@@ -5678,11 +5678,11 @@ snapshots:
 
   ms@2.1.3: {}
 
-  msw@2.11.2(@types/node@24.4.0)(typescript@5.8.3):
+  msw@2.11.2(@types/node@24.6.0)(typescript@5.8.3):
     dependencies:
       '@bundled-es-modules/cookie': 2.0.1
       '@bundled-es-modules/statuses': 1.0.1
-      '@inquirer/confirm': 5.1.18(@types/node@24.4.0)
+      '@inquirer/confirm': 5.1.18(@types/node@24.6.0)
       '@mswjs/interceptors': 0.39.6
       '@open-draft/deferred-promise': 2.2.0
       '@open-draft/until': 2.1.0
@@ -6498,7 +6498,7 @@ snapshots:
       has-symbols: 1.1.0
       which-boxed-primitive: 1.1.1
 
-  undici-types@7.11.0: {}
+  undici-types@7.13.0: {}
 
   uri-js@4.4.1:
     dependencies:
@@ -6509,13 +6509,13 @@ snapshots:
       react: 18.3.1
     optional: true
 
-  vite-node@2.1.9(@types/node@24.4.0):
+  vite-node@2.1.9(@types/node@24.6.0):
     dependencies:
       cac: 6.7.14
       debug: 4.4.3
       es-module-lexer: 1.6.0
       pathe: 1.1.2
-      vite: 5.4.20(@types/node@24.4.0)
+      vite: 5.4.20(@types/node@24.6.0)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -6527,16 +6527,16 @@ snapshots:
       - supports-color
       - terser
 
-  vite@5.4.20(@types/node@24.4.0):
+  vite@5.4.20(@types/node@24.6.0):
     dependencies:
       esbuild: 0.25.10
       postcss: 8.5.6
       rollup: 4.52.0
     optionalDependencies:
-      '@types/node': 24.4.0
+      '@types/node': 24.6.0
       fsevents: 2.3.3
 
-  vite@7.1.7(@types/node@24.4.0)(jiti@2.6.0)(yaml@2.8.1):
+  vite@7.1.7(@types/node@24.6.0)(jiti@2.6.0)(yaml@2.8.1):
     dependencies:
       esbuild: 0.25.10
       fdir: 6.5.0(picomatch@4.0.3)
@@ -6545,15 +6545,15 @@ snapshots:
       rollup: 4.52.0
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 24.4.0
+      '@types/node': 24.6.0
       fsevents: 2.3.3
       jiti: 2.6.0
       yaml: 2.8.1
 
-  vitest@2.1.9(@types/node@24.4.0)(jsdom@27.0.0(postcss@8.5.6))(msw@2.11.2(@types/node@24.4.0)(typescript@5.8.3)):
+  vitest@2.1.9(@types/node@24.6.0)(jsdom@27.0.0(postcss@8.5.6))(msw@2.11.2(@types/node@24.6.0)(typescript@5.8.3)):
     dependencies:
       '@vitest/expect': 2.1.9
-      '@vitest/mocker': 2.1.9(msw@2.11.2(@types/node@24.4.0)(typescript@5.8.3))(vite@5.4.20(@types/node@24.4.0))
+      '@vitest/mocker': 2.1.9(msw@2.11.2(@types/node@24.6.0)(typescript@5.8.3))(vite@5.4.20(@types/node@24.6.0))
       '@vitest/pretty-format': 2.1.9
       '@vitest/runner': 2.1.9
       '@vitest/snapshot': 2.1.9
@@ -6569,11 +6569,11 @@ snapshots:
       tinyexec: 0.3.2
       tinypool: 1.0.2
       tinyrainbow: 1.2.0
-      vite: 5.4.20(@types/node@24.4.0)
-      vite-node: 2.1.9(@types/node@24.4.0)
+      vite: 5.4.20(@types/node@24.6.0)
+      vite-node: 2.1.9(@types/node@24.6.0)
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@types/node': 24.4.0
+      '@types/node': 24.6.0
       jsdom: 27.0.0(postcss@8.5.6)
     transitivePeerDependencies:
       - less
