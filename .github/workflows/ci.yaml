@@ -50,7 +50,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright tests
-        run: bash playwright/test.sh
+        run: pnpm playwright:ci
 
       - uses: actions/upload-artifact@v4
         if: always()

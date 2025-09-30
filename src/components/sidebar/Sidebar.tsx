@@ -4,6 +4,7 @@ import { t } from "i18next";
 import { ChevronLeft, LogOut, Menu, Home, FolderOpen } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
+import ThemeToggle from "src/components/theme-toggle/ThemeToggle";
 import { Button } from "src/components/ui/button";
 import { Separator } from "src/components/ui/separator";
 import { cn } from "src/lib/utils";
@@ -71,7 +72,10 @@ const Sidebar: React.FC = () => {
 
       <Separator />
 
-      <div className="p-2">
+      <div className="p-2 space-y-1">
+        <div className={cn("w-full", !open && "flex justify-center")}>
+          <ThemeToggle />
+        </div>
         <Button
           variant="ghost"
           className={cn("w-full justify-start", !open && "justify-center px-2")}

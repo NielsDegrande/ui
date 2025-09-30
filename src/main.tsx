@@ -11,6 +11,7 @@ import Home from "src/pages/home/Home";
 import Login from "src/pages/login/Login";
 import NotFound from "src/pages/not-found/NotFound";
 import Products from "src/pages/products/Products";
+import { useThemeStore } from "src/stores/theme";
 import { Path } from "src/utils/paths";
 import { queryClient } from "src/utils/query-client";
 
@@ -51,6 +52,9 @@ const router = createBrowserRouter([
     element: <NotFound />,
   },
 ]);
+
+// Initialize theme.
+useThemeStore.getState().initializeTheme();
 
 const rootElement = document.getElementById("root");
 if (rootElement) {
