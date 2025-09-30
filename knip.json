@@ -1,3 +1,4 @@
 {
+  "entry": ["src/main.tsx", "src/components/ui/**"],
   "ignore": ["src/api/**", "eslint.config.mjs"]
 }

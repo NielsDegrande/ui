@@ -18,16 +18,21 @@ describe("Sidebar", () => {
 
   test("should render with drawer open by default", () => {
     render(<Sidebar />);
-    expect(screen.getByTestId("ChevronLeftIcon")).toBeInTheDocument();
-    expect(screen.queryByTestId("MenuIcon")).toBeNull();
+    // When drawer is open, the app name should be visible
+    expect(screen.getByText("shared.app_name")).toBeInTheDocument();
   });
 
-  test("should close the drawer on ChevronLeftIcon button click", () => {
+  test("should close the drawer on toggle button click", () => {
     render(<Sidebar />);
-    const button = screen.getByTestId("ChevronLeftIcon");
-    fireEvent.click(button);
-    expect(screen.getByTestId("MenuIcon")).toBeInTheDocument();
-    expect(screen.queryByTestId("ChevronLeftIcon")).toBeNull();
+    // App name should be visible when open
+    expect(screen.getByText("shared.app_name")).toBeInTheDocument();
+
+    // Find and click the toggle button (there's only one button in the header)
+    const toggleButton = screen.getAllByRole("button")[0];
+    fireEvent.click(toggleButton);
+
+    // After closing, app name should not be visible
+    expect(screen.queryByText("shared.app_name")).toBeNull();
   });
 
   test("should navigate to home page on Home button click", () => {

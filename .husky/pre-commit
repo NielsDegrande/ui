@@ -1,4 +1,4 @@
 npx --yes lint-staged
 pnpm test:ci
-bash playwright/test.sh
+pnpm playwright:ci
 pnpm knip

@@ -1,5 +1,5 @@
 import { AxiosError } from "axios";
-import { toast } from "react-toastify";
+import { toast } from "sonner";
 
 import { api } from "src/utils/axios-instance";
 import { Path } from "src/utils/paths";

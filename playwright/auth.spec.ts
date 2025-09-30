@@ -12,8 +12,12 @@ test("login and check elements", async ({ page }) => {
   await page.click('button[type="submit"]');
 
   // Check elements on the welcome page.
-  await expect(page.locator("h4")).toContainText("Welcome to");
-  await expect(page.locator("h3")).toContainText("Template");
+  await expect(
+    page.getByRole("heading", { name: "Welcome to", level: 2 }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: "Template", level: 1 }),
+  ).toBeVisible();
 
   // Check elements on the sidebar.
   await expect(page.locator("text=home")).toBeVisible();

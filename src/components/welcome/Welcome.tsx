@@ -1,19 +1,17 @@
 import { t } from "i18next";
 
-import {
-  AppNameText,
-  LoginImage,
-  WelcomeText,
-} from "src/components/welcome/Welcome.styled";
-
-import logo from "/logo.png";
+import logoImg from "/logo.png";
 
 const Welcome: React.FC = () => {
   return (
     <>
-      <LoginImage src={logo} alt={t("login.logo")} />
-      <WelcomeText variant="h4">{t("login.welcome_to")}</WelcomeText>
-      <AppNameText variant="h3">{t("shared.app_name")}</AppNameText>
+      <img src={logoImg} alt={t("login.logo")} className="h-32 w-auto" />
+      <h2 className="text-2xl text-muted-foreground mt-4">
+        {t("login.welcome_to")}
+      </h2>
+      <h1 className="text-3xl font-bold text-primary mb-8">
+        {t("shared.app_name")}
+      </h1>
     </>
   );
 };

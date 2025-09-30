@@ -1,22 +1,25 @@
-import { Typography } from "@mui/material";
 import { ErrorBoundary } from "react-error-boundary";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 import { CenterMiddleContainer } from "src/components/center-middle-container/CenterMiddleContainer";
-import { PrimaryButton } from "src/components/primary-button/PrimaryButton";
+import { Button } from "src/components/ui/button";
 import Error from "src/pages/error/Error";
+import { Path } from "src/utils/paths";
 
 /**
  * Renders the Not Found page.
  */
 const NotFound: React.FC = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+
   return (
     <ErrorBoundary fallback={<Error />}>
       <CenterMiddleContainer>
-        <Typography variant="h1">404</Typography>
-        <Typography>{t("not_found.page_not_found")}</Typography>
-        <PrimaryButton href="/">{t("shared.home")}</PrimaryButton>
+        <h1 className="text-6xl font-bold">404</h1>
+        <p className="text-lg">{t("not_found.page_not_found")}</p>
+        <Button onClick={() => navigate(Path.HOME)}>{t("shared.home")}</Button>
       </CenterMiddleContainer>
     </ErrorBoundary>
   );

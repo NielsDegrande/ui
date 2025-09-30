@@ -1,17 +1,15 @@
-import AccountCircle from "@mui/icons-material/AccountCircle";
-import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-import { Grid, InputAdornment, TextField } from "@mui/material";
-import { ErrorMessage, Field, Form, Formik } from "formik";
+import { ErrorMessage, Form, Formik } from "formik";
 import { t } from "i18next";
+import { User, Lock } from "lucide-react";
 import { ErrorBoundary } from "react-error-boundary";
 import { useNavigate } from "react-router-dom";
 import * as Yup from "yup";
 
 import { CenterMiddleContainer } from "src/components/center-middle-container/CenterMiddleContainer";
-import { PrimaryButton } from "src/components/primary-button/PrimaryButton";
+import { Button } from "src/components/ui/button";
+import { Input } from "src/components/ui/input";
 import Welcome from "src/components/welcome/Welcome";
 import Error from "src/pages/error/Error";
-import { StyledForm } from "src/pages/login/Login.styled";
 import { logIn } from "src/utils/authentication";
 
 const validationSchema = Yup.object({
@@ -28,7 +26,7 @@ const Login: React.FC = () => {
     <ErrorBoundary fallback={<Error />}>
       <CenterMiddleContainer>
         <Welcome />
-        <StyledForm>
+        <div className="w-full max-w-md">
           <Formik
             initialValues={{ username: "", password: "" }}
             validationSchema={validationSchema}
@@ -38,62 +36,60 @@ const Login: React.FC = () => {
               setSubmitting(false);
             }}
           >
-            {({ isSubmitting }) => (
-              <Form>
-                <Grid container spacing={2}>
-                  <Grid item xs={12}>
-                    <Field
-                      as={TextField}
+            {({ isSubmitting, handleChange, values }) => (
+              <Form className="space-y-4">
+                <div className="space-y-2">
+                  <label htmlFor="username" className="text-sm font-medium">
+                    {t("login.username")}
+                  </label>
+                  <div className="relative">
+                    <User className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                    <Input
+                      id="username"
                       name="username"
-                      label={t("login.username")}
-                      variant="outlined"
-                      fullWidth
-                      InputProps={{
-                        startAdornment: (
-                          <InputAdornment position="start">
-                            <AccountCircle />
-                          </InputAdornment>
-                        ),
-                      }}
-                      helperText={
-                        <ErrorMessage name="username" component="div" />
-                      }
+                      placeholder={t("login.username")}
+                      className="pl-10"
+                      value={values.username}
+                      onChange={handleChange}
                     />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <Field
-                      as={TextField}
+                  </div>
+                  <div className="text-sm text-destructive">
+                    <ErrorMessage name="username" component="div" />
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <label htmlFor="password" className="text-sm font-medium">
+                    {t("login.password")}
+                  </label>
+                  <div className="relative">
+                    <Lock className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                    <Input
+                      id="password"
                       name="password"
                       type="password"
-                      label={t("login.password")}
-                      variant="outlined"
-                      fullWidth
-                      InputProps={{
-                        startAdornment: (
-                          <InputAdornment position="start">
-                            <LockOutlinedIcon />
-                          </InputAdornment>
-                        ),
-                      }}
-                      helperText={
-                        <ErrorMessage name="password" component="div" />
-                      }
+                      placeholder={t("login.password")}
+                      className="pl-10"
+                      value={values.password}
+                      onChange={handleChange}
                     />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <PrimaryButton
-                      type="submit"
-                      fullWidth
-                      disabled={isSubmitting}
-                    >
-                      {t("login.login")}
-                    </PrimaryButton>
-                  </Grid>
-                </Grid>
+                  </div>
+                  <div className="text-sm text-destructive">
+                    <ErrorMessage name="password" component="div" />
+                  </div>
+                </div>
+
+                <Button
+                  type="submit"
+                  className="w-full"
+                  disabled={isSubmitting}
+                >
+                  {t("login.login")}
+                </Button>
               </Form>
             )}
           </Formik>
-        </StyledForm>
+        </div>
       </CenterMiddleContainer>
     </ErrorBoundary>
   );

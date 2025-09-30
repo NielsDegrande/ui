@@ -1,72 +1,14 @@
 import { useState } from "react";
 
-import {
-  ChevronLeft as ChevronLeftIcon,
-  Logout as LogoutIcon,
-  Menu as MenuIcon,
-  Home as HomeIcon,
-  Category as CategoryIcon,
-} from "@mui/icons-material";
-import {
-  Typography,
-  Divider,
-  Drawer as MuiDrawer,
-  IconButton,
-  List,
-  ListItem,
-} from "@mui/material";
-import { CSSObject, Theme, styled as muiStyled } from "@mui/material/styles";
 import { t } from "i18next";
+import { ChevronLeft, LogOut, Menu, Home, FolderOpen } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-import {
-  DrawerHeader,
-  StyledListItemButton,
-  StyledListItemIcon,
-  StyledListItemText,
-} from "src/components/sidebar/Sidebar.styled";
+import { Button } from "src/components/ui/button";
+import { Separator } from "src/components/ui/separator";
+import { cn } from "src/lib/utils";
 import { logOut } from "src/utils/authentication";
 import { Path } from "src/utils/paths";
-
-const drawerWidth = 240;
-
-const openedMixin = (theme: Theme): CSSObject => ({
-  width: drawerWidth,
-  transition: theme.transitions.create("width", {
-    easing: theme.transitions.easing.sharp,
-    duration: theme.transitions.duration.enteringScreen,
-  }),
-  overflowX: "hidden",
-});
-
-const closedMixin = (theme: Theme): CSSObject => ({
-  transition: theme.transitions.create("width", {
-    easing: theme.transitions.easing.sharp,
-    duration: theme.transitions.duration.leavingScreen,
-  }),
-  overflowX: "hidden",
-  width: `calc(${theme.spacing(7)} + 1px)`,
-  [theme.breakpoints.up("sm")]: {
-    width: `calc(${theme.spacing(8)} + 1px)`,
-  },
-});
-
-const Drawer = muiStyled(MuiDrawer, {
-  shouldForwardProp: (prop) => prop !== "open",
-})(({ theme, open }) => ({
-  width: drawerWidth,
-  flexShrink: 0,
-  whiteSpace: "nowrap",
-  boxSizing: "border-box",
-  ...(open && {
-    ...openedMixin(theme),
-    "& .MuiDrawer-paper": openedMixin(theme),
-  }),
-  ...(!open && {
-    ...closedMixin(theme),
-    "& .MuiDrawer-paper": closedMixin(theme),
-  }),
-}));
 
 /**
  * Renders the sidebar component.
@@ -81,58 +23,65 @@ const Sidebar: React.FC = () => {
   };
 
   return (
-    <Drawer variant="permanent" open={open}>
-      <DrawerHeader open={open}>
-        {open ? (
-          <Typography variant="h5">{t("shared.app_name")}</Typography>
-        ) : null}
-        <IconButton onClick={toggleOpen}>
-          {open ? <ChevronLeftIcon /> : <MenuIcon />}
-        </IconButton>
-      </DrawerHeader>
-      <Divider />
-      <List>
-        <ListItem key={"home"} disablePadding>
-          <StyledListItemButton
-            onClick={() => {
-              navigate(Path.HOME);
-            }}
-          >
-            <StyledListItemIcon open={open}>
-              <HomeIcon />
-            </StyledListItemIcon>
-            <StyledListItemText open={open} primary={t("shared.home")} />
-          </StyledListItemButton>
-        </ListItem>
-        <ListItem key={"products"} disablePadding>
-          <StyledListItemButton
-            onClick={() => {
-              navigate(Path.PRODUCTS);
-            }}
-          >
-            <StyledListItemIcon open={open}>
-              <CategoryIcon />
-            </StyledListItemIcon>
-            <StyledListItemText open={open} primary={t("shared.products")} />
-          </StyledListItemButton>
-        </ListItem>
-      </List>
-      <Divider />
-      <List>
-        <ListItem key={"logout"} disablePadding>
-          <StyledListItemButton
-            onClick={() => {
-              logOut(navigate);
-            }}
-          >
-            <StyledListItemIcon open={open}>
-              <LogoutIcon />
-            </StyledListItemIcon>
-            <StyledListItemText open={open} primary={t("sidebar.logout")} />
-          </StyledListItemButton>
-        </ListItem>
-      </List>
-    </Drawer>
+    <aside
+      className={cn(
+        "h-screen border-r bg-background transition-all duration-300 flex flex-col",
+        open ? "w-60" : "w-16",
+      )}
+    >
+      <div
+        className={cn(
+          "flex items-center p-4",
+          open ? "justify-between" : "justify-center",
+        )}
+      >
+        {open && (
+          <h2 className="text-xl font-semibold">{t("shared.app_name")}</h2>
+        )}
+        <Button variant="ghost" size="icon" onClick={toggleOpen}>
+          {open ? (
+            <ChevronLeft className="h-4 w-4" />
+          ) : (
+            <Menu className="h-4 w-4" />
+          )}
+        </Button>
+      </div>
+
+      <Separator />
+
+      <nav className="flex-1 space-y-1 p-2">
+        <Button
+          variant="ghost"
+          className={cn("w-full justify-start", !open && "justify-center px-2")}
+          onClick={() => navigate(Path.HOME)}
+        >
+          <Home className={cn("h-4 w-4", open && "mr-2")} />
+          {open && <span>{t("shared.home")}</span>}
+        </Button>
+
+        <Button
+          variant="ghost"
+          className={cn("w-full justify-start", !open && "justify-center px-2")}
+          onClick={() => navigate(Path.PRODUCTS)}
+        >
+          <FolderOpen className={cn("h-4 w-4", open && "mr-2")} />
+          {open && <span>{t("shared.products")}</span>}
+        </Button>
+      </nav>
+
+      <Separator />
+
+      <div className="p-2">
+        <Button
+          variant="ghost"
+          className={cn("w-full justify-start", !open && "justify-center px-2")}
+          onClick={() => logOut(navigate)}
+        >
+          <LogOut className={cn("h-4 w-4", open && "mr-2")} />
+          {open && <span>{t("sidebar.logout")}</span>}
+        </Button>
+      </div>
+    </aside>
   );
 };
 

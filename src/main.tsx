@@ -1,14 +1,12 @@
 import React from "react";
 
-import { Global } from "@emotion/react";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
 
 import ProtectedRoute from "src/components/protected-route/ProtectedRoute";
-import { globalStyles } from "src/main.styled";
+import { Toaster } from "src/components/ui/sonner";
 import Home from "src/pages/home/Home";
 import Login from "src/pages/login/Login";
 import NotFound from "src/pages/not-found/NotFound";
@@ -16,9 +14,7 @@ import Products from "src/pages/products/Products";
 import { Path } from "src/utils/paths";
 import { queryClient } from "src/utils/query-client";
 
-import ThemeProvider from "./theme";
-
-import "react-toastify/dist/ReactToastify.css";
+import "src/index.css";
 import "src/locales/i18n";
 
 const { worker } = await import("src/mocks/browser");
@@ -28,7 +24,7 @@ const { worker } = await import("src/mocks/browser");
 if (import.meta.env.VITE_USE_MOCK_API !== "false") {
   // eslint-disable-next-line no-console
   console.log("Using mock API");
-  void worker.start();
+  await worker.start();
 }
 
 const router = createBrowserRouter([
@@ -60,14 +56,11 @@ const rootElement = document.getElementById("root");
 if (rootElement) {
   ReactDOM.createRoot(rootElement).render(
     <React.StrictMode>
-      <ThemeProvider>
-        <Global styles={globalStyles} />
-        <QueryClientProvider client={queryClient}>
-          <ToastContainer position="top-center" />
-          <RouterProvider router={router} />
-          <ReactQueryDevtools />
-        </QueryClientProvider>
-      </ThemeProvider>
+      <QueryClientProvider client={queryClient}>
+        <Toaster />
+        <RouterProvider router={router} />
+        <ReactQueryDevtools />
+      </QueryClientProvider>
     </React.StrictMode>,
   );
 }

@@ -24,6 +24,19 @@ const compat = new FlatCompat({
 });
 
 export default [
+  // Global ignores.
+  {
+    ignores: [
+      "dist",
+      "dist-ssr",
+      "coverage",
+      "playwright-report",
+      "test-results",
+      "blob-report",
+      "playwright/.cache",
+      "node_modules",
+    ],
+  },
   // Rules in eslintrc format.
   ...compat.extends(
     "eslint:recommended",
