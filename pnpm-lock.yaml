@@ -115,7 +115,7 @@ importers:
         version: 4.2.2(vite@7.3.0(@types/node@25.0.3)(jiti@2.6.1)(yaml@2.8.1))
       '@vitest/coverage-v8':
         specifier: 2.1.9
-        version: 2.1.9(vitest@2.1.9(@types/node@25.0.3)(jsdom@27.4.0)(msw@2.12.2(@types/node@25.0.3)(typescript@5.9.3)))
+        version: 2.1.9(vitest@2.1.9(@types/node@25.0.3)(jsdom@27.4.0)(msw@2.12.7(@types/node@25.0.3)(typescript@5.9.3)))
       autoprefixer:
         specifier: ^10.4.23
         version: 10.4.23(postcss@8.5.6)
@@ -159,8 +159,8 @@ importers:
         specifier: 5.66.1
         version: 5.66.1(@types/node@25.0.3)(typescript@5.9.3)
       msw:
-        specifier: 2.12.2
-        version: 2.12.2(@types/node@25.0.3)(typescript@5.9.3)
+        specifier: 2.12.7
+        version: 2.12.7(@types/node@25.0.3)(typescript@5.9.3)
       postcss:
         specifier: ^8.5.6
         version: 8.5.6
@@ -181,7 +181,7 @@ importers:
         version: 7.3.0(@types/node@25.0.3)(jiti@2.6.1)(yaml@2.8.1)
       vitest:
         specifier: 2.1.9
-        version: 2.1.9(@types/node@25.0.3)(jsdom@27.4.0)(msw@2.12.2(@types/node@25.0.3)(typescript@5.9.3))
+        version: 2.1.9(@types/node@25.0.3)(jsdom@27.4.0)(msw@2.12.7(@types/node@25.0.3)(typescript@5.9.3))
 
 packages:
 
@@ -1765,10 +1765,6 @@ packages:
   convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
 
-  cookie@1.0.2:
-    resolution: {integrity: sha512-9Kr/j4O16ISv8zBBhJoi4bXOYNTkFLOqSL3UDB0njXxCXNezjeyVrJyGOWtgfs/q2km1gwBcfH8q1yEGoMYunA==}
-    engines: {node: '>=18'}
-
   cookie@1.1.1:
     resolution: {integrity: sha512-ei8Aos7ja0weRpFzJnEA9UHJ/7XQmqglbRwnf2ATjcB9Wq874VKH9kfjjirM6UhU2/E5fFYadylyhFldcqSidQ==}
     engines: {node: '>=18'}
@@ -2687,8 +2683,8 @@ packages:
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
 
-  msw@2.12.2:
-    resolution: {integrity: sha512-Fsr8AR5Yu6C0thoWa1Z8qGBFQLDvLsWlAn/v3CNLiUizoRqBYArK3Ex3thXpMWRr1Li5/MKLOEZ5mLygUmWi1A==}
+  msw@2.12.7:
+    resolution: {integrity: sha512-retd5i3xCZDVWMYjHEVuKTmhqY8lSsxujjVrZiGbbdoxxIBg5S7rCuYy/YQpfrTYIxpd/o0Kyb/3H+1udBMoYg==}
     engines: {node: '>=18'}
     hasBin: true
     peerDependencies:
@@ -3340,6 +3336,10 @@ packages:
     resolution: {integrity: sha512-MeQTA1r0litLUf0Rp/iisCaL8761lKAZHaimlbGK4j0HysC4PLfqygQj9srcs0m2RdtDYnF8UuYyKpbjHYp7Jw==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
+  tagged-tag@1.0.0:
+    resolution: {integrity: sha512-yEFYrVhod+hdNyx7g5Bnkkb0G6si8HJurOoOEgC8B/O0uXLHlaey/65KRv6cuWBNhBgHKAROVpc7QyYqE5gFng==}
+    engines: {node: '>=20'}
+
   tailwind-merge@3.4.0:
     resolution: {integrity: sha512-uSaO4gnW+b3Y2aWoWfFpX62vn2sR3skfhbjsEnaBI81WD1wBLlHZe5sWf0AqjksNdYTbGBEd0UasQMT3SNV15g==}
 
@@ -3439,9 +3439,9 @@ packages:
     resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
     engines: {node: '>=12.20'}
 
-  type-fest@4.41.0:
-    resolution: {integrity: sha512-TeTSQ6H5YHvpqVwBRcnLDCBnDOHWYu7IvGbHT6N8AOymcr9PJGjc1GTtiWZTYg0NCgYwvnYWEkVChQAr9bjfwA==}
-    engines: {node: '>=16'}
+  type-fest@5.3.1:
+    resolution: {integrity: sha512-VCn+LMHbd4t6sF3wfU/+HKT63C9OoyrSIf4b+vtWHpt2U7/4InZG467YDNMFMR70DdHjAdpPWmw2lzRdg0Xqqg==}
+    engines: {node: '>=20'}
 
   typed-array-buffer@1.0.3:
     resolution: {integrity: sha512-nAYYwfY3qnzX30IkA6AQZjVbtK6duGontcQm1WSG1MD94YLqK0515GNApXkoxKOWMusVssAHWLh9SeaoefYFGw==}
@@ -4896,7 +4896,7 @@ snapshots:
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@vitest/coverage-v8@2.1.9(vitest@2.1.9(@types/node@25.0.3)(jsdom@27.4.0)(msw@2.12.2(@types/node@25.0.3)(typescript@5.9.3)))':
+  '@vitest/coverage-v8@2.1.9(vitest@2.1.9(@types/node@25.0.3)(jsdom@27.4.0)(msw@2.12.7(@types/node@25.0.3)(typescript@5.9.3)))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@bcoe/v8-coverage': 0.2.3
@@ -4910,7 +4910,7 @@ snapshots:
       std-env: 3.8.0
       test-exclude: 7.0.1
       tinyrainbow: 1.2.0
-      vitest: 2.1.9(@types/node@25.0.3)(jsdom@27.4.0)(msw@2.12.2(@types/node@25.0.3)(typescript@5.9.3))
+      vitest: 2.1.9(@types/node@25.0.3)(jsdom@27.4.0)(msw@2.12.7(@types/node@25.0.3)(typescript@5.9.3))
     transitivePeerDependencies:
       - supports-color
 
@@ -4921,13 +4921,13 @@ snapshots:
       chai: 5.2.0
       tinyrainbow: 1.2.0
 
-  '@vitest/mocker@2.1.9(msw@2.12.2(@types/node@25.0.3)(typescript@5.9.3))(vite@5.4.21(@types/node@25.0.3))':
+  '@vitest/mocker@2.1.9(msw@2.12.7(@types/node@25.0.3)(typescript@5.9.3))(vite@5.4.21(@types/node@25.0.3))':
     dependencies:
       '@vitest/spy': 2.1.9
       estree-walker: 3.0.3
       magic-string: 0.30.17
     optionalDependencies:
-      msw: 2.12.2(@types/node@25.0.3)(typescript@5.9.3)
+      msw: 2.12.7(@types/node@25.0.3)(typescript@5.9.3)
       vite: 5.4.21(@types/node@25.0.3)
 
   '@vitest/pretty-format@2.1.9':
@@ -5249,8 +5249,6 @@ snapshots:
   consola@3.4.2: {}
 
   convert-source-map@2.0.0: {}
-
-  cookie@1.0.2: {}
 
   cookie@1.1.1: {}
 
@@ -6338,13 +6336,13 @@ snapshots:
 
   ms@2.1.3: {}
 
-  msw@2.12.2(@types/node@25.0.3)(typescript@5.9.3):
+  msw@2.12.7(@types/node@25.0.3)(typescript@5.9.3):
     dependencies:
       '@inquirer/confirm': 5.1.21(@types/node@25.0.3)
       '@mswjs/interceptors': 0.40.0
       '@open-draft/deferred-promise': 2.2.0
       '@types/statuses': 2.0.6
-      cookie: 1.0.2
+      cookie: 1.1.1
       graphql: 16.12.0
       headers-polyfill: 4.0.3
       is-node-process: 1.2.0
@@ -6355,7 +6353,7 @@ snapshots:
       statuses: 2.0.2
       strict-event-emitter: 0.5.1
       tough-cookie: 6.0.0
-      type-fest: 4.41.0
+      type-fest: 5.3.1
       until-async: 3.0.2
       yargs: 17.7.2
     optionalDependencies:
@@ -7100,6 +7098,8 @@ snapshots:
     dependencies:
       '@pkgr/core': 0.2.9
 
+  tagged-tag@1.0.0: {}
+
   tailwind-merge@3.4.0: {}
 
   tailwindcss@3.4.17:
@@ -7207,7 +7207,9 @@ snapshots:
 
   type-fest@2.19.0: {}
 
-  type-fest@4.41.0: {}
+  type-fest@5.3.1:
+    dependencies:
+      tagged-tag: 1.0.0
 
   typed-array-buffer@1.0.3:
     dependencies:
@@ -7327,10 +7329,10 @@ snapshots:
       jiti: 2.6.1
       yaml: 2.8.1
 
-  vitest@2.1.9(@types/node@25.0.3)(jsdom@27.4.0)(msw@2.12.2(@types/node@25.0.3)(typescript@5.9.3)):
+  vitest@2.1.9(@types/node@25.0.3)(jsdom@27.4.0)(msw@2.12.7(@types/node@25.0.3)(typescript@5.9.3)):
     dependencies:
       '@vitest/expect': 2.1.9
-      '@vitest/mocker': 2.1.9(msw@2.12.2(@types/node@25.0.3)(typescript@5.9.3))(vite@5.4.21(@types/node@25.0.3))
+      '@vitest/mocker': 2.1.9(msw@2.12.7(@types/node@25.0.3)(typescript@5.9.3))(vite@5.4.21(@types/node@25.0.3))
       '@vitest/pretty-format': 2.1.9
       '@vitest/runner': 2.1.9
       '@vitest/snapshot': 2.1.9
