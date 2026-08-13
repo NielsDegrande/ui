@@ -3,7 +3,30 @@
 ## Introduction
 
 This repository holds the UI.
-It incudes pnpm + React + TypeScript + Vite + SWC.
+It includes pnpm + React + TypeScript + Vite.
+
+## Tech Stack
+
+| Area            | Choice                           |
+| --------------- | -------------------------------- |
+| UI framework    | React 19                         |
+| Build           | Vite 8 (rolldown)                |
+| React plugin    | @vitejs/plugin-react             |
+| Language        | TypeScript                       |
+| Styling         | Tailwind CSS 4 + shadcn/ui       |
+| Routing         | React Router 7                   |
+| Server state    | TanStack Query 5                 |
+| Client state    | Zustand 5                        |
+| Forms           | react-hook-form + zod            |
+| HTTP            | Fetch API (generated client)     |
+| API codegen     | @hey-api/openapi-ts              |
+| i18n            | i18next + react-i18next          |
+| Mocking         | MSW 2                            |
+| Unit tests      | Vitest 4 + React Testing Library |
+| E2E tests       | Playwright                       |
+| Lint and format | ESLint 9 (import-x) + Prettier   |
+| Git hooks       | Husky + lint-staged              |
+| Package manager | pnpm 11                          |
 
 ## Getting Started
 
@@ -22,11 +45,10 @@ npx playwright install --with-deps
 pnpm husky init
 ```
 
-## Generate API from Swagger
+## Generate API from OpenAPI
 
-We use `swagger-typescript-api` to generate the API.
+We use `@hey-api/openapi-ts` to generate the API client into `src/api`.
 
-To generate the templates (first time only): `pnpm templates`.
 To update the models: `pnpm models`.
 When executing the above, make sure the API is running.
 
@@ -35,13 +57,13 @@ When executing the above, make sure the API is running.
 shadcn/ui and Tailwind CSS are used to define the user interface.
 Tailwind provides utility-first CSS styling with theme customization through CSS custom properties.
 Sonner is used to show toast notifications to the user.
-Formik is used to capture user input. Yup for validation.
+react-hook-form is used to capture user input. zod for validation.
 
 ## State Management
 
 Zustand is used for client state management.
 React Query is used for server state management.
-Axios is used for API calls.
+API calls go through the generated fetch-based client.
 
 ## Internationalization
 

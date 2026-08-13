@@ -31,22 +31,22 @@ pnpm playwright        # Run Playwright E2E tests
 
 # Other
 pnpm knip              # Find unused files/dependencies
-pnpm models            # Generate API models from OpenAPI (requires API running at localhost:8080)
+pnpm models            # Generate API client from OpenAPI (requires API running at localhost:8080)
 ```
 
 ## Architecture Overview
 
 ### Tech Stack
 
-- **React 18** with TypeScript
-- **Vite** + SWC for fast builds and hot reload
-- **shadcn/ui** + Tailwind CSS for styling
+- **React 19** with TypeScript
+- **Vite** (rolldown) for fast builds and hot reload
+- **shadcn/ui** + Tailwind CSS (v4, CSS-first config) for styling
 - **React Router** (v7) for routing
 - **TanStack Query** (React Query) for server state
 - **Zustand** for client state
-- **Formik** + Yup for forms and validation
+- **react-hook-form** + zod for forms and validation
 - **i18next** for internationalization
-- **Axios** for HTTP requests
+- **Fetch API** via a generated client (@hey-api/openapi-ts) for HTTP requests
 - **MSW** for API mocking
 - **Vitest** + React Testing Library for unit tests
 - **Playwright** for E2E tests
@@ -55,7 +55,7 @@ pnpm models            # Generate API models from OpenAPI (requires API running 
 
 ```txt
 src/
-├── api/              # Generated API client (from swagger-typescript-api)
+├── api/              # Generated API client (from @hey-api/openapi-ts)
 ├── components/       # Reusable UI components
 ├── locales/          # i18n translation files (en/translation.json)
 ├── mocks/            # MSW handlers for API mocking
@@ -87,9 +87,10 @@ src/
 
 **API Integration:**
 
-- API client is **auto-generated** from OpenAPI spec using `swagger-typescript-api`
+- API client is **auto-generated** from OpenAPI spec using `@hey-api/openapi-ts` (config in `openapi-ts.config.ts`)
 - Run `pnpm models` to regenerate (requires backend at `localhost:8080/api/openapi.json`)
-- Axios instance configured in `src/utils/axios-instance.ts` with interceptors for auth
+- Fetch-based client configured in `src/utils/api-client.ts` (base URL and Basic auth)
+- Import SDK functions from `src/api` (e.g. `getProductsApiSampleProductGet`)
 - API is conditionally mocked using MSW based on `VITE_USE_MOCK_API` env var
 
 **Styling:**
@@ -143,7 +144,7 @@ toast.error("Error message", {
 The project uses `src/*` path alias (configured in both `tsconfig.json` and `vite.config.ts`):
 
 ```typescript
-import { api } from "src/utils/axios-instance";
+import { getProductsApiSampleProductGet } from "src/api";
 import { Path } from "src/utils/paths";
 ```
 

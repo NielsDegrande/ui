@@ -1,4 +1,4 @@
 {
   "entry": ["src/components/ui/**"],
-  "ignore": ["src/api/**", "eslint.config.mjs"]
+  "ignore": ["src/api/**"]
 }

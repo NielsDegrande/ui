@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-import { Product } from "src/api/data-contracts";
+import { Product } from "src/api";
 
 export interface ProductState {
   product: Product | null;
