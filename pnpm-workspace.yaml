@@ -2,9 +2,9 @@ packages:
   - "."
 
 # Dependencies allowed to run build scripts on install.
-onlyBuiltDependencies:
-  - msw
-  - unrs-resolver
+allowBuilds:
+  msw: true
+  unrs-resolver: true
 
 # Security overrides for transitive dependencies awaiting upstream bumps.
 overrides:
