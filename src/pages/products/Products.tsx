@@ -4,7 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { t } from "i18next";
 import { ErrorBoundary } from "react-error-boundary";
 
-import { Product } from "src/api/data-contracts";
+import { getProductsApiSampleProductGet, type Product } from "src/api";
 import Sidebar from "src/components/sidebar/Sidebar";
 import { Button } from "src/components/ui/button";
 import {
@@ -22,7 +22,6 @@ import {
 } from "src/components/ui/select";
 import Error from "src/pages/error/Error";
 import { ProductState, useProductStore } from "src/stores/product";
-import { api } from "src/utils/axios-instance";
 import { QueryKey } from "src/utils/query-keys";
 
 /**
@@ -33,7 +32,9 @@ const Products: React.FC = () => {
   const { data: products } = useQuery({
     queryKey: QueryKey.products,
     queryFn: () =>
-      api.getProductsApiSampleProductGet().then((response) => response.data),
+      getProductsApiSampleProductGet({ throwOnError: true }).then(
+        (response) => response.data,
+      ),
   });
 
   // Statement management, largely here for exemplary purposes.
@@ -64,9 +65,10 @@ const Products: React.FC = () => {
   // const { data: selectedProduct } = useQuery({
   //   queryKey: QueryKey.product(productId ?? 0),
   //   queryFn: () =>
-  //     api
-  //       .getProductApiSampleProductProductIdGet(productId ?? 0)
-  //       .then((response) => response.data),
+  //     getProductApiSampleProductProductIdGet({
+  //       path: { product_id: Number(productId) },
+  //       throwOnError: true,
+  //     }).then((response) => response.data),
   //   enabled: !!productId,
   // });
 

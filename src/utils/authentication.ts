@@ -1,7 +1,6 @@
-import { AxiosError } from "axios";
 import { toast } from "sonner";
 
-import { api } from "src/utils/axios-instance";
+import { authenticateApiAuthGet } from "src/api";
 import { Path } from "src/utils/paths";
 
 /**
@@ -55,23 +54,26 @@ export const logIn = (
   navigate: (path: string) => void,
 ): void => {
   setAuthenticationToken(btoa(`${username}:${password}`));
-  api
-    .authenticateApiAuthGet()
-    .then(() => {
-      navigate(Path.HOME);
-    })
-    .catch((error: unknown) => {
+  authenticateApiAuthGet()
+    .then(({ response }) => {
+      if (response?.ok) {
+        navigate(Path.HOME);
+        return;
+      }
+
       removeAuthenticationToken();
 
-      const response = (error as AxiosError).response;
-
-      if (response && response.status === 404) {
+      if (response?.status === 404) {
         toast.error("User not found.");
-      } else if (response && response.status === 401) {
+      } else if (response?.status === 401) {
         toast.error("Invalid password.");
       } else {
         toast.error("Something went wrong. Please try again.");
       }
+    })
+    .catch(() => {
+      removeAuthenticationToken();
+      toast.error("Something went wrong. Please try again.");
     });
 };
 

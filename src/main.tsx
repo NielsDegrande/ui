@@ -17,6 +17,7 @@ import { queryClient } from "src/utils/query-client";
 
 import "src/index.css";
 import "src/locales/i18n";
+import "src/utils/api-client";
 
 const { worker } = await import("src/mocks/browser");
 
