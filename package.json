@@ -55,7 +55,7 @@
     "react-i18next": "17.1.13",
     "react-router-dom": "7.18.5",
     "sonner": "^2.0.8",
-    "tailwind-merge": "^3.7.0",
+    "tailwind-merge": "^3.7.1",
     "zod": "^4.6.6",
     "zustand": "5.0.16"
   },
